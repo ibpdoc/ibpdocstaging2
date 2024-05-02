@@ -1,1 +1,1 @@
-define({"../Content/Shared Properties.htm":0,});
+define({"../platform/Shared Properties - 1.htm":0,});
