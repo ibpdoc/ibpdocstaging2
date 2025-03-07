@@ -1,0 +1,841 @@
+/*<meta conditions="default.Help Refresh" />*/
+
+/*Brings in styles used for the landing page
+@import url('HomepageStyles.css'); */
+
+/*== Master page layout styles, setting the sidebar with top-level headings and the content area ==*/
+/* styles for spotlight blade */
+
+.blade
+{
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	margin-top: 0px;
+	width: auto;
+	padding: 10px 10px 5px 10px;
+	background-color: #0050FF;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.ticker
+{
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	margin-top: 0px;
+	padding: 5px 0px 5px 0px;
+	background-color: #0050FF;
+}
+
+/* New styles for the tiles on the main page, using the flexbox method. See https://css-tricks.com/snippets/css/a-guide-to-flexbox/ to get started. No alternate styles for different media...I think */
+
+.flex-blocks-box
+{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: row;
+	/*switch back to row for standard layout */
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: space-evenly;
+	/* max-width: 60vw; /*width set in viewport width */
+	/*	max-height: 550px; */
+	max-width: 1200px;
+	padding: 25px 0px 25px 0px;
+	margin: 0 auto;
+}
+
+.flex-block
+{
+	position: relative;
+	/* not in other style*/
+	/*for overlay */
+	flex: initial;
+	width: 250px;
+	height: 250px;
+	margin: 5px;
+	padding: 50px;
+	/* background-color: #f8f8f8;*/
+	background-color: #45494C;
+	border: 1px solid #485155;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.flex-block-support
+{
+	flex: initial;
+	width: 500px;
+	height: 250px;
+	margin: 15px;
+	padding: 5px 10px 10px 15px;
+	background-color: #f8f8f8;
+	text-align: left;
+	border: 1px solid #aaaaaa;
+	border-radius: 5px;
+}
+
+.flex-block p
+{
+	line-height: 20px;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+.flex-block-230 p
+{
+	line-height: 16px;
+	font-size: 15px;
+}
+
+.flex-block a,
+.flex-block-230 a
+{
+	color: #616161;
+}
+
+.flex-blocks-box a:hover,
+.flex-block a:hover,
+a:focus
+{
+	/* color: #0050FF;*/
+	color: #ffffff;
+	/* color: #8D49B6; */
+	text-decoration: underline;
+	text-decoration-color: #ffffff;
+}
+
+/*
+.flex-block a:hover,
+a:focus
+{
+	color: #007897;
+	text-decoration: underline;
+}
+*/
+
+.flex-block-230:hover
+{
+	/* color: #007897;
+    color: #8D49B6; */
+	border: 1px solid #007897;
+	border-radius: 15px;
+}
+
+.flex-block h3,
+.flex-block-230 h3
+{
+	text-align: center;
+	color: #ffffff;
+	font-size: 20px;
+	line-height: 20px;
+	font-weight: 600;
+	margin-top: 5px;
+	margin-bottom: 16px;
+}
+
+h1.welcome
+{
+	text-align: center;
+}
+
+p.welcome
+{
+	font-size: 18px;
+	line-height: 20px;
+	text-align: center;
+}
+
+/* the next few styles style the lists of links in the footer */
+
+.options li
+{
+	list-style: none;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 0.9em;
+	line-height: 1.2em;
+	margin-bottom: 10px;
+}
+
+/* New styles to layout items in footer, using the flexbox method. See https://css-tricks.com/snippets/css/a-guide-to-flexbox/ to get started */
+
+.flex-footer-box
+{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: baseline;
+	align-content: space-evenly;
+	max-width: 100vw;
+	padding: 25px 0px 25px 0px;
+	margin: 0 auto;
+}
+
+.flex-footer
+{
+	position: relative;
+	/*for overlay */
+	flex: initial;
+	display: inline-block;
+	/* width: 25px;*/
+	/*height: 25px;*/
+	margin: 5px;
+	padding: 5px;
+	text-align: center;
+}
+
+/* delete me - hey it works! but the styles are all bad - not anymore, THEY WORK! 
+
+.overlay
+{
+	display: none;
+	transition: 0.5s ease;
+	text-align: center;
+}
+
+.flex-block:hover
+{
+	padding: 0;
+}
+
+.flex-block:hover .overlay
+{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 1;
+	background: #f8f8f8;
+	border-radius: 5px;
+	padding: 10px 0px 10px 0px;
+	width: 100%;
+	height: 100%;
+}
+
+#overlay-p
+{
+	font-size: 15px;
+	line-height: 18px;
+}
+
+*/
+
+/* New styles for the tiles on the main page, using the flexbox method. See https://css-tricks.com/snippets/css/a-guide-to-flexbox/ to get started */
+
+/******
+* New main page video layout styles using flexbox - 
+* see https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
+* Each block is made up of three divs: 
+* 1. the wrapper - this takes the flex-container style; 
+* 2. the heading and description - this takes the videodescRight or videodescLeft style depending on whether the description should be on the right or left of the video; and 
+* 3. the video - this takes the videoLeft or videoRight styles, depending on whether the video should be on the left or right. 
+* In Flare, always put the div with the heading and description first with the video div second. The stylesheet takes care of the order: videoRight + videodescLeft = the video is on the right when full width; videoLeft + videodescRight = the video is on the left when full width. They both stack with the description on the top when the screen is shrunk below a certain breakpoint.   
+******/
+
+.flex-spotlight
+{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	/* max-width: 60vw; /*width set in viewport width */
+	/*	max-height: 550px; */
+	max-width: 100%;
+	padding: 15px 0px 15px 0px;
+	margin: 0 auto;
+}
+
+.spotlight
+{
+	position: relative;
+	/*for overlay */
+	flex: initial;
+	width: 900px;
+	margin: 0px 15px;
+	padding: 5px 5px 0px 5px;
+	text-align: left;
+	/* margin: 5px;*/
+	/*padding: 50px;*/
+	/* text-align: center; */
+}
+
+.spotlight h2
+{
+	margin-top: 0px;
+}
+
+.videoWrapper
+{
+	position: relative;
+	padding-bottom: 56.26%;
+	height: 0;
+	clear: both;
+}
+
+.videoWrapper iframe
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	max-width: 640;
+	border: 0;
+}
+
+/*
+.spotlight iframe { 
+	 width: 640px;
+	 height:360px;
+} */
+
+.spotlight > p,
+.spotlight > ul
+{
+	text-align: left;
+	width: 100%;
+}
+
+/* Code to back up material icons for Flare 2018 r2 
+
+@font-face 
+{
+	font-family: 'Material Icons';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/materialicons/v41/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons
+{
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	/*color: #0050FF;*/
+
+/*
+	color: #0050FF;
+	font-size: 80px;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;
+	display: inline-block;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	-webkit-font-feature-settings: 'liga';
+	-webkit-font-smoothing: antialiased;
+}
+
+*/
+
+/* Styles for the return to top icon - move to ebfd styles */
+
+/*
+#return-to-top
+{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.7);
+	width: 50px;
+	height: 50px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	-webkit-border-radius: 35px;
+	-moz-border-radius: 35px;
+	border-radius: 35px;
+	display: none;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#return-to-top i
+{
+	color: #fff;
+	margin: 0;
+	position: relative;
+	/* left: 16px; 
+	top: 5px;
+	font-size: 35px;
+	font-weight: bold;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#return-to-top:hover
+{
+	background: rgba(0, 0, 0, 0.9);
+}
+
+#return-to-top:hover i
+{
+	color: #fff;
+	top: 0px;
+} */
+
+/*===========================================================================================================================================================
+Styles after this point are styles that are for specific mediums. If any additional styles are added to this template they will be listed after mediums.
+[@media tablet] declares styles that will apply when the screen is in tablet view
+[@media mobile] declares styles that will apply when the screen is in mobile view
+===========================================================================================================================================================*/
+
+@media only screen and (max-width: 1200px)
+{
+	div.link-bar
+	{
+		float: initial;
+		display: block;
+		padding-left: 10px;
+	}
+
+	div.topic-layout
+	{
+		max-width: 100%;
+		min-height: 100vh;
+		/*overrides the min-height set in the default medium*/
+	}
+
+	div.heading-master
+	{
+		margin-top: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	h1.heading-master
+	{
+		margin-top: 0;
+		padding: 5px 0 5px 0;
+		font-size: 3em;
+	}
+
+	div.logo-menu
+	{
+		display: none;
+	}
+
+	div.topic-layout > div:nth-child(1)
+	{
+		width: 100%;
+		min-height: 160px;
+		float: none;
+		position: relative;
+	}
+
+	div.topic-layout > div:nth-child(2)
+	{
+		width: 100%;
+		float: none;
+	}
+
+	div.search-menu
+	{
+		margin-top: 0;
+	}
+
+	div.body-layout
+	{
+		max-width: 100%;
+	}
+
+	/*Overrides styles for the video layout in the video section at a smaller screen widths.*/
+
+	div.video-tile > div:nth-child(1)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	div.video-tile > div:nth-child(2)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+}
+
+@media only screen and (max-width: 480px)
+{
+	h1.heading-master
+	{
+		font-size: 3em;
+	}
+
+	div.topic-layout > div:nth-child(1)
+	{
+		min-height: 160px;
+		/*was 200px, but tablet was 160px */
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	div.body-layout
+	{
+		max-width: 100%;
+	}
+
+	div.body-layout > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-top: 5px;
+		min-height: 95vh;
+		border: 0;
+		padding: 0;
+	}
+
+	div.body-layout > div:nth-child(2)
+	{
+		display: none;
+	}
+
+	.spotlight iframe
+	{
+		width: 480px;
+		height: 270px;
+	}
+
+	/* inherits from tablet div.link-bar {
+		float: initial;
+		display: block;
+		padding-left: 10px;
+	} */
+
+	div.landing-page	/*Styles for the side-by-side sections on sub-landing pages, stacking them in mobile*/
+	{
+		mc-grid-row: true;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div.landing-page::before
+	{
+		content: ' ';
+		display: table;
+	}
+
+	div.landing-page::after
+	{
+		content: ' ';
+		display: table;
+		clear: both;
+	}
+
+	div.landing-page > div
+	{
+		float: left;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding-left: 0.5px;
+		padding-right: 0.5px;
+	}
+
+	div.landing-page > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+		padding: 5px;
+		border-left: 0;
+		border-bottom: 1px solid #79878F;
+	}
+
+	div.landing-page > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+		padding: 5px;
+	}
+
+	/*Overrides styles for the video layout in the video section at a smaller screen widths.*/
+
+	div.video-tile > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.video-tile > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.videoWrapper iframe	/* sizes video on main page, separate style for mobile media */
+	{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		max-width: 100vw;
+	}
+}
+
+/* see media tablet for additional styles that are inherited by mobile */
+
+@media all and (max-width: 1500px) and (min-width: 768px)
+{
+	div.topic-layout > div:nth-child(2)	/*Right pane container - the second child - additional styles for narrower resolutions */
+	{
+		padding-left: 5px;
+		padding-right: 0px;
+	}
+
+	.blade
+	{
+		margin-left: -5px;
+	}
+}
+
+@media all and (max-width: 767px)
+{
+	div.topic-layout > div:nth-child(2)	/*Right pane container - the second child - additional styles for narrower resolutions */
+	{
+		padding-left: 5px;
+		padding-right: 0px;
+	}
+
+	.blade
+	{
+		margin-left: -5px;
+	}
+
+	.flex-container
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: stretch;
+		align-content: stretch;
+		max-width: 100vw;
+		/*width set in viewport width */
+		margin: 0 auto;
+		padding: 0 10px 0 10px;
+	}
+
+	.flex-videoLeft
+	{
+		flex: 0 0 auto;
+		order: 2;
+		/* sets the order of the video to second when screen size is below breakpoint */
+		width: 480px;
+		height: 270px;
+		padding: 0;
+		margin: 0 auto;
+	}
+
+	.flex-videoRight
+	{
+		flex: 0 0 auto;
+		width: 480px;
+		height: 270px;
+		padding: 0;
+		margin: 0 auto;
+	}
+
+	.flex-videodescRight
+	{
+		flex: 1 2 auto;
+		order: 1;
+		/* sets the order of the description to first when screen size is below breakpoint */
+		padding: 0;
+	}
+
+	.flex-videodescLeft
+	{
+		flex: 1 2 auto;
+		padding: 0;
+	}
+
+	/*Styles for the video layout in the video section at a smaller screen widths.*/
+
+	div.video-tile > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.video-tile > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+}
+
+/* styles for narrower but not mobile or tablet screens */
+
+/* delete me 
+
+
+.title-bar a.logo
+{
+   background-color: transparent;
+   background-image: url('../../xMResources/Images/xmatters-logo-documentation.svg');
+   background-repeat: no-repeat;
+   width: 250px;
+}
+
+	div.home-tiles > div:nth-child(1)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	div.home-tiles > div:nth-child(2)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	div.home-tiles > div:nth-child(3)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	div.home-tiles > div:nth-child(4)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+	
+div.logo-menu > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 2%;
+	padding-left: 2%;
+} 
+
+.main-section > .outer-row	
+	{
+		padding: 0;
+	}
+.main-section > .outer-row	
+	{
+		padding: 0;
+	}
+
+
+
+*/
+
+/* these flex video styles might not be used if we don't have side by side video and text - could simplify if we keep*/
+
+/*
+div.flex-container::before {
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.flex-container::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+	max-width: 55vw; /*width set in viewport width 
+	margin: 0 auto;
+	padding: 0 25px 0 25px;
+	
+}
+
+.flex-videoLeft {
+	flex: 0 0 auto;
+	order: 1;
+	width: 480px;
+	height: 270px;
+	padding: 50px 15px 0 0;
+	margin: 20px auto;
+}
+
+.flex-videoRight {
+	flex: 0 0 auto;
+	width: 480px;
+	height: 270px;
+	padding: 50px 0 0 15px;
+	margin: 0 auto;
+}
+
+.flex-videodescRight {
+	flex: 0 2 auto;
+	order: 2;
+	padding: 0 0 0 25px;
+}
+
+.flex-videodescLeft {
+	flex: 0 2 auto;
+	padding: 0 10px 0 0;
+}
+
+780 to 1200
+{
+	.flex-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: stretch;
+		align-content: stretch;
+		max-width: 80vw; /*width set in viewport width 
+		margin: 0 auto;
+		padding: 0 10px 0 10px;
+	}
+	
+	.flex-videoLeft {
+		flex: 0 0 auto;
+		order: 2; /* sets the order of the video to second when screen size is below breakpoint 
+		width: 480px;
+		height: 270px;
+		padding: 0;
+		margin: 0 auto;
+}
+
+	.flex-videoRight {
+		flex: 0 0 auto;
+		width: 480px;
+		height: 270px;
+		padding: 0;
+		margin: 0 auto;
+	}
+
+	.flex-videodescRight {
+		flex: 1 2 auto;
+		order: 1; /* sets the order of the description to first when screen size is below breakpoint 
+		padding: 0;
+	}
+
+	.flex-videodescLeft {
+		flex: 1 2 auto;
+		padding: 0;
+	}
+}
+*/
+

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="concept _Skins_EBFD_Side_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Advanced setup and administration|Installing and administering Private Cloud|Administration|Managing customer tenants" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Working with customer records</title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/stylesheets/styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/stylesheets/tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/stylesheets/mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/stylesheets/print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../resources/branding/branding.css" rel="stylesheet" type="text/css" />
+        <link href="../xebresources/stylesheets/eb-styles.css" rel="stylesheet" type="text/css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1200px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../communications/everbridge360.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <p>
+                                        <script type="text/javascript">/*<![CDATA[*/ $(window).resize(function() {
+				var winWidth = $(window).width();
+				if (winWidth > 1279) {
+				console.log('appendTo >1279');
+				$("#header-links").appendTo("div.logo-wrapper");
+				} else {
+				console.log('appendTo <1279');
+				$("#header-links").appendTo("#offCanvas .off-canvas-accordion");
+				}
+			});/*]]>*/</script>
+                                        <script>/* <![CDATA[ */
+				$( document ).ready(function() {
+				$('.MCTopicPopupHotSpot').removeClass('MCTopic').addClass('MCTopicPopup');
+				});
+
+				if (window.self != window.top) {
+				// topnav
+				$('div.title-bar-container').css('display','none');
+
+				// sidenav
+				$('nav.sidenav-wrapper').css('display','none');
+				
+				// topicnav
+				$('div.topicnav-wrapper').css('display','none');
+	
+				// tablet+phone
+				$('nav.title-bar').css('display','none');
+ 
+				$('a').attr('target','_parent');
+				}
+			/* ]]> */</script>
+                                    </p>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div class="Responsive-8-4">
+                                        <div class="body-box">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 class="concepttitle" id="Workingwithcustomerrecords" data-magellan-target="Workingwithcustomerrecords">Working with customer records</h1>
+                                                <p>To view and work with <span class="uicontrol">Customer</span> record
+      details, Platform administrators of the master tenant can do the following:</p>
+                                                <ol>
+                                                    <li value="1">From the application switcher, select  <span class="uicontrol">System
+          Console</span>:<div class="fig"><p><img alt="Select System Console" src="lsl1439926230063.jpg" /></p></div></li>
+                                                    <li value="2">Select the <span class="uicontrol">Customers</span> tab.</li>
+                                                    <li value="3">In the <span class="uicontrol">Customers List</span> area, click
+          the <span class="uicontrol">Customer Name</span>.</li>
+                                                    <li value="4">Do any of the following operations:<ul><li><span class="uicontrol">View Logs</span>: View log files
+            associated with this customer, which can be useful for troubleshooting and debugging.
+            Requires view permission</li><li><span class="uicontrol">Login</span>: Log into a customer
+            tenant as a Super-Admin (invisible user with full access). This option requires log in
+            permission. The button only appears after the administrative user of the customer tenant
+            enables access for the master tenant users. For more information about enabling support
+            access, see <a href="enabling an administrative user to log into a customer tenant.htm" class="MCXref xref">Enabling an administrative user to log into a customer tenant</a>.</li><li><span class="uicontrol">Edit</span>: Modify the customer
+            record. Requires edit permission.</li></ul><p>From the <span class="uicontrol">More Actions</span>
+          drop-down menu, do any of the following: </p><ul><li><span class="uicontrol">Delete</span>: Deletes the customer
+            record and all customer's data. Requires delete permission. </li><li><span class="uicontrol">Convert</span>: Converts the customer
+            into another object. </li><li><span class="uicontrol">Clone</span>: Clones the selected
+            customer information to quickly create a new customer. <div class="note"><b>Note: </b><span class="uicontrol">Email </span> and <span class="uicontrol">Login
+                Name</span> of the <span class="uicontrol">First Administrative
+                User</span> details cannot be same as that of the existing customer.</div></li><li><span class="uicontrol">Send</span>: To send email
+            notifications using a selected template with attachments to selected users, as
+            required.</li><li><span class="uicontrol">Reindex</span>: To update and reindex
+            all free text queries for search for the customer. <div class="note"><b>Note: </b><span class="uicontrol">Reindex</span> option is a mass action in the <span class="uicontrol">Customer
+                List</span> view area. This action can also be performed from the
+                <span class="uicontrol">Customer Record Details</span> page.</div></li><li><span class="uicontrol">Sync Subscribers</span>: Updates the subscriber information for the
+            customer.</li><li><span class="uicontrol">Login As</span>: Log into a customer
+            tenant as a particular user. This option requires log in permission. The button only
+            appears after the administrative user of the customer tenant enables access for the
+            master tenant users. For more information about enabling support access, see <a href="enabling an administrative user to log into a customer tenant.htm" class="MCXref xref">Enabling an administrative user to log into a customer tenant</a>.</li><li><span class="uicontrol">Data Maintenance</span>: Use this
+            procedure to restore the integrity of relationships for this customer. This is only for
+            fixing problems and will not be used under normal conditions. </li><li><span class="uicontrol">System Backup &amp; Restore</span>:
+            Monitor and create system backup files created in this customer. See <a href="backup and restore.htm" class="MCXref xref">Backup and Restore</a> for more information.<span class="uicontrol">Restore from backup</span>: (from Backup page) Use the <span class="uicontrol">Restore</span> option to delete all current customer data and
+            replace it with data imported from the selected backup file (no users can be logged in
+            during backup). </li><li><span class="uicontrol">Move Database</span>: Moves customer
+            data to another (selected) database. Requires edit permission. Additionally, after
+            performing <span class="uicontrol">Move Database</span>, you must navigate to
+            the customer's details page, under <span class="uicontrol">Runtime
+              Information</span> area, select <span class="uicontrol">Load</span> to
+            load the customer tenant from the production server cache.<div class="note"><b>Note: </b>You
+              unload and load the customer tenant for the new settings to take effect. Only after
+              loading the customer tenant from the production server cache can the users log into
+              the customer tenant.</div></li><li><span class="uicontrol">Move
+              Storage</span>: Select this option to move the customer storage from cloud-cloud,
+            local-cloud, or cloud-local. To perform this operation, select a storage server from the
+              <span class="uicontrol">Storage Server</span> drop-down list and it's
+            corresponding location from <span class="uicontrol">Storage Location</span>
+            drop-down list. Uncheck <span class="uicontrol">Copy Files</span> if you do not
+            prefer copying files from the storage server/location and click <span class="uicontrol">Move</span>.<div class="note"><b>Note: </b><ul><li><span class="uicontrol">Move Storage</span> option is
+                  a mass action in the <span class="uicontrol">Customer List</span> view
+                  area. This action can also be performed from the <span class="uicontrol">Customer Record Details</span> page.</li><li>Master tenant can move their own storage and it's corresponding
+                  location from the <a href="account settings.htm">Account
+                    Settings</a> page.</li><li>When <span class="uicontrol">Copy Files</span> is
+                  unchecked while performing <span class="uicontrol">Move Storage</span>
+                  operation, the corresponding data should be copied manually in accordance to the
+                  Platform constraints. The constraints are applicable only when the files are
+                  copied from Local to Cloud or Cloud to Local.</li><li>If the log directory in the storage system is configured at the
+                  node level (<code>node-config.json</code> for <code>LogDir</code> key), then the customer's log directory does
+                  not move as part of <span class="uicontrol">Move Storage</span>.</li><li>On Moving storage from Local to Cloud, logs and backup folders
+                  are moved to a default Platform Storage directory, unless the storage and log
+                  directories are configured in <code>node-config.json</code>.</li><li><p>While the <b>Move Storage</b> operation is in progress, the customer's access to the instance is restricted. The master admin should make sure to notify the customer once the <b>Move Storage</b> operation is executed, the customer can then log in to the instance.</p></li></ul></div></li><li><span class="uicontrol">Move Index</span>: Select this
+            option to move the search index from one search engine to another. To perform this
+            operation, select a server from the <span class="uicontrol">Search
+              Server</span> drop-down list, then the new index from the <span class="uicontrol">New Index</span> drop-down list and click <span class="uicontrol">Move</span>. You can also move the search index within the same
+            search engine. <span class="uicontrol">Search Server</span> and
+              <span class="uicontrol">Search Index </span>are usually independent. The Lucene search index
+            anyway depends on the selected <span class="uicontrol">Search
+              Server</span>.<div class="note"><b>Note: </b><ul><li><span class="uicontrol">Move Index</span> option is a
+                  mass action in the <span class="uicontrol">Customer List</span> view area. This action can
+                  also be performed from the <span class="uicontrol">Customer Record Details</span>
+                  page.</li><li>Master tenant can move their own search index from the <a href="account settings.htm">Account Settings</a> page.</li></ul></div></li><li><span class="uicontrol">Set Preferences</span>: Enables
+            selecting parser preferences for DOC and DOCX documents. Then, select the parser
+            preferences for DOC and DOCX type of documents. <ul><li><span class="uicontrol">Doc Parser</span>: <span class="uicontrol">Default</span>, <span class="uicontrol">Aspose
+                  Parser</span> and <span class="uicontrol">Built-In Parser</span> are
+                the available options. If you want to make Aspose Parser as the <span class="uicontrol">Default</span> option, you must select the <code>IsAsposeDocParserEnabled</code> shared property. By default,
+                this property is unchecked. See <a href="shared properties.htm" class="MCXref xref">Shared Properties</a> for more information.<div class="note"><b>Note: </b>To use the existing
+                  RTF documents, you must ensure that the Aspose Word jar is present in the <b>lib</b> folder. </div></li><li><span class="uicontrol">Docx Parser</span>: <span class="uicontrol">Default</span>, <span class="uicontrol">Aspose
+                  Parser</span> and <span class="uicontrol">Built-In Parser</span> are
+                the available options. If you want to make Aspose Parser as the <span class="uicontrol">Default</span> option, you must select the <code>IsAsposeDocxParserEnabled</code> shared property. By default,
+                this property is unchecked. See <a href="shared properties.htm" class="MCXref xref">Shared Properties</a> for more information.<div class="note"><b>Note: </b>If Aspose Word jars
+                  are not present in the <b>lib</b> folder, the Built-In Parser will
+                  be used by default and the <span class="uicontrol">Doc Parser</span> and
+                    <span class="uicontrol">Docx Parser</span> drop-down lists will not be
+                  visible.</div></li></ul></li><li><span class="uicontrol">Update Usage Stats</span>: Checks
+            the overused resources column when either the records or the storage used by the
+            customer(s) exceeds the maximum records or storage allotted. This further restricts file
+            uploads to the system.</li></ul></li>
+                                                </ol>
+                                            </div>
+                                            <p id="return-to-top"><a href="#top"><img src="../xebresources/evbg/arrow_circle_up_24dp_1f1f1f_fill0_wght400_grad0_opsz24.png" /></a>
+                                            </p>
+                                        </div>
+                                        <div class="topicnav-wrapper">
+                                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbarProxy mc-component nocontent" style="mc-topic-toolbar-items: Back QuickSearch AddTopicToFavorites;">
+                                                <div class="button-group-container-left">
+                                                    <button class="button needs-pie previous-topic-button" title="Go back" disabled="true">
+                                                        <div>
+                                                            <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                                <div class="button-icon"> </div>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                    <button class="button needs-pie next-topic-button" title="See what's next" disabled="true">
+                                                        <div>
+                                                            <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                                <div class="button-icon"> </div>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <br />
+                                            <h4>In this topic</h4>
+                                            <div class="sticky-container">
+                                                <div data-sticky-container="" id="SzJgAETaOkqKK8-Us5Em7A">
+                                                    <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="SzJgAETaOkqKK8-Us5Em7A:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 1201px)" data-scroll-container-on="only screen and (min-width: 1201px)">
+                                                        <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1201px)" class="topicMenu menu _Skins_TopicMenuProxy mc-component">
+                                                            <li class="tree-node"><a href="#Workingwithcustomerrecords">Working with customer records</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="home-footer">
+                                        <table style="width: 100%;border-top-style: solid;border-top-width: 1px;border-top-color: #808080;">
+                                            <col />
+                                            <col />
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p> </p>
+                                                    </td>
+                                                    <td style="text-align: left;">
+                                                        <p>Content © 2025 Everbridge, Inc. All rights reserved. </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

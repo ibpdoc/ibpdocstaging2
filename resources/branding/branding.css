@@ -1,0 +1,17 @@
+/*<meta />*/
+
+/* MadCap-Branding applanguage:Templates/Projects/Online/Side Navigation/ */
+
+:root
+{
+	--Dark: #45494C;
+	--Lightest: #FFFFFF;
+	--LogoImage: url('../../xebresources/evbg/eve_horizontal_logo_white_p1r1.png');
+	--Primary: #1437C1;
+	--Darkest: #101681;
+	--Secondary: #3760F3;
+	--Medium: #cFD8DC;
+	--Light: #E2E8EA;
+	--FontFamily: Inter, Roboto, Arial;
+}
+

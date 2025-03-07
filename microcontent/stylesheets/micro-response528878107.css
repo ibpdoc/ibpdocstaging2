@@ -1,0 +1,930 @@
+/*<meta />*/
+
+/* MadCap-Branding applanguage:Templates/Projects/Online/Side Navigation/ */
+
+.micro-response528878107 :root
+{
+	--Dark: #45494C;
+	--Lightest: #FFFFFF;
+	--LogoImage: url('../../xebresources/evbg/eve_horizontal_logo_white_p1r1.png');
+	--Primary: #1437C1;
+	--Darkest: #101681;
+	--Secondary: #3760F3;
+	--Medium: #cFD8DC;
+	--Light: #E2E8EA;
+	--FontFamily: Inter, Roboto, Arial;
+}
+
+/*imports google icons for graphics on main page, people etc. See styles further down */
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/*ResponsiveGrid stylesheets for pages with grid layout eg landing page*/
+
+@import url('../../xebresources/evbg/responsivegrid/col.css');
+
+@import url('../../xebresources/evbg/responsivegrid/2cols.css');
+
+@import url('../../xebresources/evbg/responsivegrid/3cols.css');
+
+@import url('../../xebresources/evbg/responsivegrid/4cols.css');
+
+@import url('../../xebresources/evbg/responsivegrid/5cols.css');
+
+@import url('../../xebresources/evbg/responsivegrid/6cols.css');
+
+@import url('../../xebresources/evbg/responsivegrid/7cols.css');
+
+@import url('../../xebresources/evbg/responsivegrid/8cols.css');
+
+@import url('../../xebresources/evbg/responsivegrid/9cols.css');
+
+@import url('../../xebresources/evbg/responsivegrid/10cols.css');
+
+@import url('../../xebresources/evbg/responsivegrid/11cols.css');
+
+@import url('../../xebresources/evbg/responsivegrid/12cols.css');
+
+@import url('../../xebresources/stylesheets/homestyles.css');
+
+.micro-response528878107 :root
+{
+	--Brand1: #474747;
+	--Brand2: #CDE0E7;
+	--Dark: #45494C;
+	--Medium: #b9bec1;
+	--Light: #d0d3d5;
+	--White: #ffffff;
+}
+
+/**************BODY********************/
+
+/* 
+Saving this for reference - EVBG blue: 0074BB
+*/
+
+/* these set up light and dark mode - see https://www.madcapsoftware.com/blog/adding-a-light-dark-mode-theme-switcher-to-html5-targets/ for the basics 
+
+body.light
+{
+  --text: dark;
+  --background: white;
+}
+
+body.dark
+{
+  --text: white;
+  --background: black;
+}
+*/
+
+.micro-response528878107
+{
+	font-family: 'Roboto', 'Roboto-Regular', Helvetica, Arial, sans-serif;
+	margin: 17px;
+	/*max-width: 750px;*/
+	line-height: 22.1px;
+	font-size: 15px;
+	/*color: var(--text); for dark mode */
+	color: #616161;
+	font-weight: 400;
+	font-style: normal;
+	/* background: var(--background); for dark mood*/
+}
+
+.micro-response528878107 div.bodyContainer
+{
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0px 20px 0px 20px;
+}
+
+.micro-response528878107 div.mainContainer
+{
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	max-width: 900px;
+	padding: 0px 20px 0px 20px;
+	text-align: left;
+	margin-bottom: 80px;
+}
+
+/*****************Content******************/
+
+.micro-response528878107 p
+{
+	font-weight: normal;
+}
+
+.micro-response528878107 p.figureCaption
+{
+	font-style: italic;
+	margin-top: 0px;
+	line-height: 10pt;
+	font-size: 8pt;
+}
+
+.micro-response528878107 span.monoText
+{
+	font-family: 'Courier New';
+}
+
+.micro-response528878107 img
+{
+	border: none;
+	max-width: 100%;
+}
+
+.micro-response528878107 p.table-text
+{
+	font-size: 12pt;
+}
+
+.micro-response528878107 p.note
+{
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 50px;
+	margin-right: 50px;
+	border-left: 4px solid #0074BB;
+}
+
+.micro-response528878107 p.code
+{
+	font-family: 'Courier New';
+	text-align: left;
+	margin-top: 0pt;
+	mc-hyphenate: never;
+	text-indent: 0px;
+	line-height: 11pt;
+	text-decoration: none;
+	margin-bottom: 0pt;
+	margin-left: 0.15in;
+	mc-auto-number-position: none;
+}
+
+.micro-response528878107 pre,
+.micro-response528878107 pre.prettyprint
+{
+	display: block;
+	white-space: normal;
+	/*	text-indent: -25px; */
+	padding-left: 25px;
+	margin: 0;
+	margin-bottom: 5px;
+	mc-hyphenate: never;
+	margin-top: 0px;
+	line-height: 12px;
+	font-size: 10pt;
+}
+
+/* Lists */
+
+.micro-response528878107 dd,
+.micro-response528878107 dd p,
+.micro-response528878107 dt,
+.micro-response528878107 dt p,
+.micro-response528878107 li.bulletsInList
+{
+	mc-hyphenate: never;
+	text-decoration: none;
+	list-style-type: disc;
+	page-break-inside: avoid;
+}
+
+.micro-response528878107 dl,
+.micro-response528878107 ol
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.micro-response528878107 ul
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 5px;
+}
+
+.micro-response528878107 li
+{
+	list-style-type: inherit;
+}
+
+.micro-response528878107 img.FitMaxWidth
+{
+	border: solid 1px #dcdcdc;
+	max-width: 100%;
+}
+
+/**** links *****/
+
+.micro-response528878107 a
+{
+	color: #0050FF;
+	text-decoration: none;
+}
+
+.micro-response528878107 a:hover,
+.micro-response528878107 a:focus
+{
+	color: #0050FF;
+	text-decoration: underline;
+}
+
+/**********Headings*****************/
+
+.micro-response528878107 h1
+{
+	font-style: normal;
+	color: var(--Brand1);
+	font-size: 40px;
+	line-height: 45px;
+	font-weight: 700;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	border-top: none 0px;
+	border: none;
+	mc-heading-level: 1;
+}
+
+.micro-response528878107 h2
+{
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 40px;
+	font-style: normal;
+	color: var(--Dark);
+	mc-heading-level: 2;
+	mc-hyphenate: never;
+	margin-top: 1em;
+	margin-bottom: 3px;
+}
+
+.micro-response528878107 h3
+{
+	font-size: 24px;
+	font-weight: 500;
+	color: var(--Dark);
+	mc-hyphenate: never;
+	margin-bottom: 3px;
+	margin-top: 1;
+	mc-heading-level: 3;
+	line-height: 30px;
+}
+
+.micro-response528878107 h4
+{
+	color: var(--Dark);
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 500;
+	mc-heading-level: 0;
+	mc-hyphenate: never;
+	margin-bottom: 3px;
+	margin-top: 1em;
+}
+
+.micro-response528878107 h5
+{
+	font-size: 15px;
+	line-height: 15px;
+	font-weight: 500;
+	color: var(--Dark);
+	mc-heading-level: 0;
+	font-weight: bold;
+	margin-top: .75em;
+	margin-bottom: 2px;
+}
+
+/**** MORE OVERALL STYLES****/
+
+.micro-response528878107 div.title-bar-layout
+{
+	position: relative;
+}
+
+.micro-response528878107 html.home-topic	/*Used on home topic to override padding set in the skin*/
+{
+	
+}
+
+.micro-response528878107 html.home-topic .body-container	/*Overrides padding set in the skin*/
+{
+	padding: 0;
+}
+
+.micro-response528878107 html.home-topic .main-section > .outer-row	/*Overrides padding set in the skin when in tablet/mobile*/
+{
+	max-width: 100%;
+	padding: 0;
+}
+
+.micro-response528878107 div.MCMiniTocBox_MiniTOCRolePage,
+.micro-response528878107 div.MCMiniTocBox_MiniTOCRolePage_0
+{
+	mc-auto-number-format: 'In this section';
+	mc-auto-number-class: miniTocBoxTitle;
+	margin: 5px 0px;
+	padding: 0px;
+}
+
+/*style the dropdown - active page*/
+/* this styles the content of the dropdown*/
+
+.micro-response528878107 div.MCDropDown,
+.micro-response528878107 div.MCDropDown_Open,
+.micro-response528878107 div.dropDown
+{
+	border-bottom: solid 1px #000000;
+	border-top: solid 1px #000000;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/*turn off the top border - second drop down in a row, so the border isn't too thick*/
+
+.micro-response528878107 div.MCDropDown + div.MCDropDown
+{
+	border-top: none;
+}
+
+/*style the heading links of the drop-down text*/
+
+.micro-response528878107 div.MCDropDown span.MCDropDownHead a
+{
+	color: #474747;
+	font-size: 18px;
+	font-weight: 500;
+	mc-heading-level: 0;
+}
+
+/*reset the link style for text inside drop-downs
+
+div.MCDropDown a
+{
+	color: #0050FF;
+	font-size: 15px;
+}
+*/
+
+/*add a margin to the top of the drop-down sections. This is important when 
+lists and unordered lists are the first things in a dropdown */
+
+.micro-response528878107 .MCDropDownBody
+{
+	margin-top: 10px;
+}
+
+/* Setting up top menu nav */
+
+.micro-response528878107 div.logo-menu::before
+{
+	content: ' ';
+	display: table;
+}
+
+.micro-response528878107 div.logo-menu::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+.micro-response528878107 div.search-menu
+{
+	margin-top: 20px;
+}
+
+/***************FOOTER**************/
+
+.micro-response528878107 footer
+{
+	display: block;
+	padding-top: 100px;
+}
+
+.micro-response528878107 div.home-footer
+{
+	background-color: #ffffff;
+	color: #696969;
+	border-top-color: #696969;
+	border-top-width: 1px;
+	margin-top: 20px;
+}
+
+.micro-response528878107 p.footer
+{
+	margin-bottom: 5px;
+	line-height: 13pt;
+	color: var(--White);
+	margin-top: 400px;
+}
+
+.micro-response528878107 p.footer-sub
+{
+	color: var(--White);
+	font-size: 14pt;
+}
+
+/* Master page */
+
+.micro-response528878107 div.Responsive-8-4	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.micro-response528878107 div.Responsive-8-4::before
+{
+	content: ' ';
+	display: table;
+}
+
+.micro-response528878107 div.Responsive-8-4::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+.micro-response528878107 div.Responsive-8-4 > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.micro-response528878107 div.Responsive-8-4 > div:nth-child(1)
+{
+	width: 66.66667%;
+	margin-left: 0%;
+	padding-left: 2px;
+}
+
+.micro-response528878107 div.Responsive-8-4 > div:nth-child(2)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+	padding-left: 5px;
+}
+
+/*****For medium sized screens********/
+
+@media only screen and (max-width: 1200px)
+{
+	/* Home page topic */
+
+	.micro-response528878107 html.home-topic .body-container
+	{
+		margin-left: 0;
+	}
+
+	.micro-response528878107 div.Responsive-8-4 > div:nth-child(1)
+	{
+		width: 66.66667%;
+		margin-left: 0%;
+	}
+
+	.micro-response528878107 div.Responsive-8-4 > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+		padding-left: 5px;
+		border-left-style: none;
+		border-left: none 0px transparent;
+	}
+}
+
+/***********Overrides for very small screens************/
+
+@media only screen and (max-width: 480px)
+{
+	/* Home page topic */
+
+	.micro-response528878107 div.Responsive-8-4 > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.micro-response528878107 div.Responsive-8-4 > div:nth-child(2)
+	{
+		display: none;
+		/* width: 100%;
+		margin-left: 0%;
+		*/
+	}
+}
+
+@media print
+{
+	.micro-response528878107
+	{
+		font-family: 'Roboto', 'Roboto-Regular', Helvetica, Arial, sans-serif;
+	}
+
+	/* Links */
+
+	.micro-response528878107 img
+	{
+		max-width: 100%;
+	}
+
+	.micro-response528878107 tr
+	{
+		page-break-inside: avoid;
+	}
+
+	.micro-response528878107 li
+	{
+		orphans: 2;
+		widows: 2;
+		column-break-before: avoid;
+		page-break-before: avoid;
+	}
+
+	.micro-response528878107 pre
+	{
+		page-break-inside: avoid;
+	}
+
+	.micro-response528878107 li.bulletsInList
+	{
+		widows: 2;
+		page-break-before: avoid;
+	}
+
+	.micro-response528878107 p.note
+	{
+		page-break-inside: avoid;
+		widows: 4;
+		orphans: 4;
+		margin: 5pt 5pt 5pt 5pt;
+	}
+
+	.micro-response528878107 ul
+	{
+		widows: 4;
+	}
+
+	.micro-response528878107 h1.TitlePage
+	{
+		text-align: center;
+		line-height: 40pt;
+		font-size: 36pt;
+		padding-left: 10pt;
+		padding-bottom: 30px;
+		border-left-width: 1px;
+		border-left-style: none;
+		border-right-style: none;
+		border-right-width: 1px;
+		border-top-style: none;
+		border-top-width: 1px;
+		border-top-color: #000000;
+		border-bottom-style: solid;
+		border-bottom-width: 3px;
+		border-bottom-color: #1437C1;
+		color: #000000;
+		font-family: 'Inter Bold';
+		mc-heading-level: 1;
+		margin-bottom: 10pt;
+	}
+
+	.micro-response528878107 p.TOC1
+	{
+		margin: 1em;
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.micro-response528878107 p.TOC2
+	{
+		margin-bottom: ;
+	}
+
+	.micro-response528878107 p.TOC4
+	{
+		display: none;
+	}
+
+	.micro-response528878107 p.TOC5
+	{
+		display: none;
+	}
+
+	.micro-response528878107 p.TOC6
+	{
+		display: none;
+	}
+
+	.micro-response528878107 p.TOC7
+	{
+		display: none;
+	}
+
+	.micro-response528878107 p.TOC8
+	{
+		display: none;
+	}
+
+	.micro-response528878107 p.TOC9
+	{
+		display: none;
+	}
+}
+
+/* -- Nov 5 - Blame Brianna -- */
+
+.micro-response528878107 div.title-bar-layout a.logo
+{
+	background-size: contain;
+}
+
+/* mobile tablet view */
+
+@media only screen and (max-width: 1200px)
+{
+	/* hamburger menu */
+
+	.micro-response528878107 .title-bar .menu-icon span
+	{
+		background-color: black !important;
+	}
+
+	/* logo wrapper */
+
+	.micro-response528878107 .title-bar-layout .logo-wrapper
+	{
+		height: 64px;
+	}
+
+	/* logo */
+
+	.micro-response528878107 div.title-bar-layout a.logo
+	{
+		width: 170px;
+		background-size: contain;
+	}
+
+	.micro-response528878107 .title-bar a.logo
+	{
+		background-color: transparent;
+		background-image: url('../../xebresources/evbg/eve_horizontal_logo_white_p1r1.svg');
+		background-repeat: no-repeat;
+		width: 250px;
+	}
+
+	/* header links
+
+	div#header-links.header-bar
+	{
+		float: none;
+		width: 100%;
+		display: inline-block;
+		border-top: solid 1px #ccc;
+		margin-top: 8px;
+		padding-top: 8px;
+	}
+
+	div#header-links.header-bar p
+	{
+		float: none;
+		padding: 0.6667rem !important;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	div#header-links.header-bar a
+	{
+		color: #FFFFFF;
+	}
+	
+	 */
+}
+
+.micro-response528878107 div.topicTOCContainer
+{
+	display: flex;
+	text-align: left;
+	width: 30%;
+	float: left;
+}
+
+.micro-response528878107 div.topicTOCContainer > ul
+{
+	list-style-type: none;
+}
+
+/* The styles for the "Related Links" mini-toc*/
+/*style the related links section*/
+
+/*make sure the visited links are the same colour as the non-visited links.
+ *This overrides some default settings in Flare's CSS files that might be set quite right*/
+
+.micro-response528878107 a.MiniTOC1:link
+{
+	color: #616161;
+}
+
+.micro-response528878107 a.MiniTOC1:visited
+{
+	color: #616161;
+}
+
+.micro-response528878107 a.MiniTOC1:focus
+{
+	color: #007897;
+}
+
+.micro-response528878107 a.MiniTOC1:hover
+{
+	color: #007897;
+}
+
+.micro-response528878107 p.MiniTOC1
+{
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 15px;
+}
+
+/* give the mini-tocs a title*/
+
+.micro-response528878107 div.MCMiniTocBox,
+.micro-response528878107 div.MCMiniTocBox_0
+{
+	mc-auto-number-format: 'In this section';
+	mc-auto-number-class: miniTocBoxTitle;
+	margin: 0px;
+	padding: 0px;
+}
+
+.micro-response528878107 .miniTocBoxTitle
+{
+	font-style: normal;
+	color: #007897;
+	font-size: 30px;
+	line-height: 45px;
+	font-weight: 400;
+}
+
+/* removes the bullets from the mini topic toc */
+
+.micro-response528878107 div.sticky-container > ul > li,
+.micro-response528878107 div.sticky-container > ul > ul > li,
+.micro-response528878107 div.sticky-container > ul > ul > ul > li,
+.micro-response528878107 div.sticky-container > ul > ul > ul > ul > li
+{
+	list-style-type: none;
+}
+
+/* leaving this here though it didn't work, but this was how Flare forums originally suggested getting rid of bullets on topic toc */
+
+/* ul.menu[data-magellan] > li,
+ul.menu[data-magellan] > ul > li,
+ul.menu[data-magellan] > ul > ul > li,
+ul.menu[data-magellan] > ul > ul > ul > li
+{
+    list-style-type: none;
+}
+*/
+
+.micro-response528878107 .MCTopicPopupContainer div.topicnav-wrapper
+{
+	display: none !important;
+}
+
+.micro-response528878107 .MCTopicPopupContainer
+{
+	width: 800px;
+}
+
+@media only screen and (max-width: 767px)
+{
+	.micro-response528878107 div.topicnav-wrapper
+	{
+		display: none !important;
+	}
+}
+
+/* pausing of animated gifs */
+
+.micro-response528878107 .gif-container
+{
+	position: relative;
+}
+
+.micro-response528878107 .pause-button
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: #0074BB;
+	padding: 5px 5px 5px 5px;
+	border: 1px solid #0074BB;
+	background-color: rgba(0, 116, 187,0.3);
+}
+
+/* Styles for the return to top icon - which isn't working at the moment look at https://docs.madcapsoftware.com/flare2024r2/Flare-Back-Top-Button-Tutorial.pdf to fix this */
+
+/*
+#return-to-top
+{
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 99;
+	background: #FFFFFF;
+	/* background: rgba(0, 0, 0, 0.7);*/
+
+/* width: 50px;
+	height: 50px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-border-radius: 35px;
+	-moz-border-radius: 35px;
+	border-radius: 35px;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}*/
+
+/*
+#return-to-top i
+{
+	color: #fff;
+	margin: 0;
+	position: relative;
+	left: 16px;
+	top: 5px;
+	font-size: 35px;
+	font-weight: bold;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#return-to-top:hover
+{
+	background: rgba(0, 0, 0, 0.9);
+}
+
+#return-to-top:hover i
+{
+	color: #fff;
+	top: 0px;
+} */
+
+.micro-response528878107 #return-to-top
+{
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Fixed position */
+	bottom: 20px;
+	/* Place the button at the bottom */
+	right: 30px;
+	/* Place the button 30px from the right */
+	z-index: 99;
+	/* Make sure it does not overlap */
+	width: 100px;
+	height: 100px;
+	border: none;
+	/* Remove borders */
+	outline: none;
+	/* Remove outline */
+	background-color: #fff;
+	/* Set a background color */
+	/* color: white;  Text color */
+	cursor: pointer;
+	/* Add a mouse pointer on hover */
+	padding: 15px;
+	/* Some padding */
+	border-radius: 10px;
+	/* Rounded corners */
+	transition: all 1s ease;
+}
+
+.micro-response528878107 #return-to-top:hover
+{
+	border: 2px;
+	/* add border on hover */
+	border-color: rgba(0, 0, 0, 0.3);
+}
+

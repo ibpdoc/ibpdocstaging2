@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_EBFD_Side_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Creating a Single Event Dashboard</title>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/stylesheets/styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/stylesheets/tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/stylesheets/mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/stylesheets/print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../resources/branding/branding.css" rel="stylesheet" type="text/css" />
+        <link href="../../xebresources/stylesheets/eb-styles.css" rel="stylesheet" type="text/css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1200px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../communications/everbridge360.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <p>
+                                        <script type="text/javascript">/*<![CDATA[*/ $(window).resize(function() {
+				var winWidth = $(window).width();
+				if (winWidth > 1279) {
+				console.log('appendTo >1279');
+				$("#header-links").appendTo("div.logo-wrapper");
+				} else {
+				console.log('appendTo <1279');
+				$("#header-links").appendTo("#offCanvas .off-canvas-accordion");
+				}
+			});/*]]>*/</script>
+                                        <script>/* <![CDATA[ */
+				$( document ).ready(function() {
+				$('.MCTopicPopupHotSpot').removeClass('MCTopic').addClass('MCTopicPopup');
+				});
+
+				if (window.self != window.top) {
+				// topnav
+				$('div.title-bar-container').css('display','none');
+
+				// sidenav
+				$('nav.sidenav-wrapper').css('display','none');
+				
+				// topicnav
+				$('div.topicnav-wrapper').css('display','none');
+	
+				// tablet+phone
+				$('nav.title-bar').css('display','none');
+ 
+				$('a').attr('target','_parent');
+				}
+			/* ]]> */</script>
+                                    </p>
+                                    <div class="Responsive-8-4">
+                                        <div class="body-box">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 id="CreatingaSingleEventDashboard" data-magellan-target="CreatingaSingleEventDashboard"><a name="XREF_42913_Creating_a"></a><span>Creating a Single Event Dashboard</span>
+                                                </h1>
+                                                <p xmlns="http://www.w3.org/1999/xhtml"><span></span>
+                                                </p>
+                                                <p xmlns="http://www.w3.org/1999/xhtml"><span><a name="XREF_96706_To_create_a_single"></a>To <a name="CSH_1"></a>create a Single Event Dashboard:</span>
+                                                </p>
+                                                <ol xmlns="http://www.w3.org/1999/xhtml">
+                                                    <li value="1"><span>From the <strong>Critical Event Home</strong> page, select an Active event. The <strong>Critical Event Details</strong> page of that event appears.</span>
+                                                    </li>
+                                                    <li value="2"><span>Click <strong>Configure</strong>, then <strong>Create New</strong>.<br /><img src="../images/create new single event dashboard_750x390.png" style="border-style: solid;border-width: 1px;width: 750;height: 390;" /> </span>
+                                                    </li>
+                                                    <li value="3"><span>The <strong>Add a Dashboard</strong> dialog&#160;appears, where you can n</span><span>ame the dashboard.<br /><img src="../images/add a dashboard dialog_750x559.png" style="border-width: 1px;border-style: solid;width: 750;height: 559;" /></span>
+                                                    </li>
+                                                    <li value="4"><span>Select the Event Widgets, Task Widgets, and Individual Task Lists, if available, that you want to see on your dashboard.</span>
+                                                        <ul>
+                                                            <li><span>Choose Event Widgets from the following:</span>
+                                                                <ul>
+                                                                    <li><span><strong>Event </strong><strong>Details&#160;</strong>- You can edit the widget title, and edit event details.</span>
+                                                                    </li>
+                                                                    <li><span><strong>Incident </strong><strong>Notifications</strong>&#160;- You can edit the widget title, and add Incident Templates.</span>
+                                                                    </li>
+                                                                    <li><strong>Root Cause</strong> - If applicable, you can specify the root cause of the Critical Event.&#160;</li>
+                                                                    <li><span><strong>Documents </strong>- You can edit the widget title, add documents, and upload new documents.</span>
+                                                                    </li>
+                                                                    <li><span><strong>Dashboard </strong><strong>Comments</strong>&#160;- You can add comments about a single dashboard in the event. Dashboard Comments are only shared with others who have access to the dashboard. Users can edit or delete their own comments, while Administrators can edit or delete those left by others.</span>
+                                                                    </li>
+                                                                    <li><strong>Task and Note Documents</strong> - Displays documents attached to Tasks or Notes.&#160;</li>
+                                                                    <li><strong>Dashboard Comments</strong> -&#160;&#160;</li>
+                                                                    <li><span><strong>Notes </strong>- You can edit the widget title, and add notes to your dashboard, including up to 4 attachments (images and other file types). Notes are shared across the event.&#160;Users can edit or delete their own notes, while Administrators can edit or delete those left by others.</span>
+                                                                    </li>
+                                                                    <li><strong>Meeting Minutes</strong> - View a record of what happened during a meeting.&#160;<strong></strong></li>
+                                                                    <li><span><strong>Audit </strong><strong>Log</strong>&#160;- You can see an Event Audit Log, Dashboard Audit Log, or both. You can also export the audit logs.</span>
+                                                                    </li>
+                                                                    <li><span><strong>Tasks Needing </strong><strong>Attention</strong>&#160;- You can see the tasks that need attention. Click a task to see its Task List Details, from which you can change the status of a task list item. You can also add comments to a task, including a maximum of 4 files.</span>
+                                                                    </li>
+                                                                    <li><span><b>Escalated Submissions</b>  &#160;<strong>-&#160;</strong></span>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li value="5"><span>Click the text field.</span>
+                                                    </li>
+                                                    <li value="6"><span>Type your note in the provided field, up to 5,000 characters.</span>
+                                                    </li>
+                                                    <li value="7"><span>Click the Upload icon to add up to four&#160;files, including images and other types of files.</span>
+                                                    </li>
+                                                    <li value="8"><span>Navigate to the desired file and click <strong>Open</strong>.</span>
+                                                    </li>
+                                                    <li value="9"><span>Click <strong>Add Note</strong>.</span>
+                                                        <ul>
+                                                            <li><span>Repeat steps 4 through 9 to add an additional note.</span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li value="10"><span>If you added an <strong>All Task Lists</strong> widget, the user can see all the tasks that need your attention. Click the task list on which you want to work.</span>
+                                                    </li>
+                                                    <li value="11"><span>Optionally, click <strong>Create </strong>to create a custom widget.</span>
+                                                        <ul>
+                                                            <li><span>From the <strong>Widget Type</strong> field, select <strong>Custom Text</strong> or <strong>Webpage </strong>from the menu.</span>
+                                                            </li>
+                                                            <li><span>Follow the <span class="FM_Xref">Create a Custom Widget</span>&#160;procedure to finish creating the widget.</span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li value="12"><span>Click <strong>Next </strong>to advance to <strong>Step 2 of 3 - Share with users </strong>and s</span><span>elect the radio button for which users of this portal are permitted to see this dashboard:</span>
+                                                        <ul>
+                                                            <li><span><strong>Public </strong>- Share with all users within an Organization.&#160;</span>
+                                                            </li>
+                                                            <li><span><strong>Private </strong>- Organization Administrators and invited users. If you select <strong>Private</strong>, you can then select Roles and Users.<br /><img src="../images/add dashboard step 2_750x253.png" style="border-style: solid;border-width: 1px;width: 750;height: 253;" /></span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li value="13"><span>Click <strong>Next </strong>to advance to <strong>Step 3 of 3 - Share with contacts</strong>. Later, you can click <strong>Share Externally</strong> to select which contacts are permitted to see this dashboard on the Member Portal.</span>
+                                                    </li>
+                                                    <li value="14"><span>Select your contacts via Individuals, Groups, or Rules.</span>
+                                                        <ul>
+                                                            <li><span>Optionally, click <strong>Preview Contacts</strong> to see the list of contacts from each category.</span>
+                                                            </li>
+                                                            <li><span>Optionally, click <strong>Clear </strong>to remove all contacts from the list and start over.</span>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li value="15"><span>Click <strong>Save</strong>.<br /><img src="../images/add dashboard step 3_750x377.png" style="border-style: solid;border-width: 1px;width: 750;height: 377;" /></span>
+                                                    </li>
+                                                </ol>
+                                                <p xmlns="http://www.w3.org/1999/xhtml"><span>All selected contacts will receive a link via email and SMS. See <span class="FM_Xref"><a data-xref="{title}" href="../../CM_2017/Single_Event_Dashboards/Viewing_Single_Event_Dashboards_from_the_Member_Portal.htm">Viewing Single Event Dashboards from the Member Portal</a>.</span></span>
+                                                </p>
+                                                <p xmlns="http://www.w3.org/1999/xhtml">
+                                                    <img src="../images/critical event dashboard shared email_676x518.png" style="border-style: solid;border-width: 1px;width: 676;height: 518;" />
+                                                </p>
+                                                <h2 xmlns="http://www.w3.org/1999/xhtml" id="SaveDashboardstoEventTemplate" data-magellan-target="SaveDashboardstoEventTemplate"><span>Save Dashboards to Event Template</span>
+                                                </h2>
+                                                <p xmlns="http://www.w3.org/1999/xhtml"><span>To save dashboards to an event template:</span>
+                                                </p>
+                                                <ol xmlns="http://www.w3.org/1999/xhtml">
+                                                    <li value="1"><span>From the <strong>Critical Event Home</strong> page, select an Active event. The <strong>Critical Event Details</strong> page of that event appears.</span>
+                                                    </li>
+                                                    <li value="2"><span>Click <strong>Configure</strong>, then <strong>Save </strong><strong>Dashboards </strong><strong>to </strong><strong>Event </strong><strong>Templates</strong>.<br /><img src="../images/save dashboard to event template_750x394.png" style="border-style: solid;border-width: 1px;width: 750;height: 394;" /> </span>
+                                                    </li>
+                                                    <li value="3"><span>The <strong>Save </strong><strong>Dashboards </strong><strong>to </strong><strong>Event </strong><strong>Template </strong><strong>dialog </strong>appears.</span>  &#160;<span>Select the checkboxes of the dashboards you want automatically included whenever this template is launched.<br /><img src="../images/save dashboard to event template 2_750x394.png" style="border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;width: 750;height: 394;" /></span></li>
+                                                    <li value="4"><span>Click <strong>Save</strong>.</span>
+                                                    </li>
+                                                    <li value="5"><span>Look at the <strong>Critical Event Template</strong> to verify the <strong>Dashboards </strong>that have been added to the template.</span>
+                                                    </li>
+                                                    <li value="6"><span>From the <strong>Critical Events</strong> tab, click <strong>Launch Critical Event</strong>.</span>
+                                                    </li>
+                                                    <li value="7"><span>Select your Critical Event Template.</span>
+                                                    </li>
+                                                    <li value="8"><span>Select the <strong>Dashboards View&#160;</strong>checkbox. The dashboard names are displayed from the <strong>View </strong>link.</span>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                            <p id="return-to-top"><a href="#top"><img src="../../xebresources/evbg/arrow_circle_up_24dp_1f1f1f_fill0_wght400_grad0_opsz24.png" /></a>
+                                            </p>
+                                        </div>
+                                        <div class="topicnav-wrapper">
+                                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbarProxy mc-component nocontent" style="mc-topic-toolbar-items: Back QuickSearch AddTopicToFavorites;">
+                                                <div class="button-group-container-left">
+                                                    <button class="button needs-pie previous-topic-button" title="Go back" disabled="true">
+                                                        <div>
+                                                            <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                                <div class="button-icon"> </div>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                    <button class="button needs-pie next-topic-button" title="See what's next" disabled="true">
+                                                        <div>
+                                                            <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                                <div class="button-icon"> </div>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <br />
+                                            <h4>In this topic</h4>
+                                            <div class="sticky-container">
+                                                <div data-sticky-container="" id="jjBaB_tmBEG3W96-SOqbZQ">
+                                                    <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="jjBaB_tmBEG3W96-SOqbZQ:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 1201px)" data-scroll-container-on="only screen and (min-width: 1201px)">
+                                                        <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1201px)" class="topicMenu menu _Skins_TopicMenuProxy mc-component">
+                                                            <li class="tree-node"><a href="#CreatingaSingleEventDashboard">Creating a Single Event Dashboard</a>
+                                                            </li>
+                                                            <li>
+                                                                <ul>
+                                                                    <li class="tree-node"><a href="#SaveDashboardstoEventTemplate">Save Dashboards to Event Template</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="home-footer">
+                                        <table style="width: 100%;border-top-style: solid;border-top-width: 1px;border-top-color: #808080;">
+                                            <col />
+                                            <col />
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p> </p>
+                                                    </td>
+                                                    <td style="text-align: left;">
+                                                        <p>Content © 2025 Everbridge, Inc. All rights reserved. </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

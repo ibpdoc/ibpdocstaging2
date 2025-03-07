@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="reference _Skins_EBFD_Side_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Create a Tomcat worker configuration file (workers)</title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/stylesheets/styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/stylesheets/tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/stylesheets/mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/stylesheets/print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../resources/branding/branding.css" rel="stylesheet" type="text/css" />
+        <link href="../xebresources/stylesheets/eb-styles.css" rel="stylesheet" type="text/css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1200px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../communications/everbridge360.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <p>
+                                        <script type="text/javascript">/*<![CDATA[*/ $(window).resize(function() {
+				var winWidth = $(window).width();
+				if (winWidth > 1279) {
+				console.log('appendTo >1279');
+				$("#header-links").appendTo("div.logo-wrapper");
+				} else {
+				console.log('appendTo <1279');
+				$("#header-links").appendTo("#offCanvas .off-canvas-accordion");
+				}
+			});/*]]>*/</script>
+                                        <script>/* <![CDATA[ */
+				$( document ).ready(function() {
+				$('.MCTopicPopupHotSpot').removeClass('MCTopic').addClass('MCTopicPopup');
+				});
+
+				if (window.self != window.top) {
+				// topnav
+				$('div.title-bar-container').css('display','none');
+
+				// sidenav
+				$('nav.sidenav-wrapper').css('display','none');
+				
+				// topicnav
+				$('div.topicnav-wrapper').css('display','none');
+	
+				// tablet+phone
+				$('nav.title-bar').css('display','none');
+ 
+				$('a').attr('target','_parent');
+				}
+			/* ]]> */</script>
+                                    </p>
+                                    <div class="Responsive-8-4">
+                                        <div class="body-box">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 class="referencetitle" id="CreateaTomcatworkerconfigurationfileworkers" data-magellan-target="CreateaTomcatworkerconfigurationfileworkers"><a name="kanchor243"></a>Create a Tomcat worker configuration file (workers)</h1>
+                                                <div class="section">
+                                                    <h2 class="sectiontitle" id="Purpose" data-magellan-target="Purpose">Purpose</h2>
+                                                    <p>Create a preliminary <span class="filepath">worker.properties</span>
+				file that supports the configuration of supporting servers (workers) for a Progress
+				Application Server (PAS) instance.</p>
+                                                    <p>in the <a target="_blank" href="https://tomcat.apache.org/connectors-doc/reference/workers.html"> Apache Reference Guide</a>, a worker is
+				defined as an "instance that is waiting to execute servlets or any other content on
+				behalf of some web server." In the context of the Progress  Application Server, a
+				worker is a server that is called by a PAS instance to perform a specific task.
+				Typically,you would define worker instances to manage proxies, load balancing,
+				clusters, or status monitoring. (For links to information on this functionality, see
+				the <a target="_blank" href="https://tomcat.apache.org/tomcat-7.0-doc/index.html">Apache Tomcat Documentation Index</a>.)
+				There are probably other situations where you could improve the performance of a
+				server instance by configuring worker instances to handle specific processing tasks. </p>
+                                                    <p>In Apache Tomcat, workers are configured in a <span class="filepath">worker.properties</span>
+				file. The protocol implemented for communication between servers and workers is the
+				Apache JServ Protocol (version 1.3, referred to as AJP13). </p>
+                                                    <p>In TCMAN, the <span class="cmdname">workers</span> action adds the definitions of registered PAS
+				instances to the content of the
+					<span class="filepath">$CATALINA_HOME/extras/workers.template</span> file and puts the
+				result in <span class="filepath">$CATALINA_HOME/temp/worker.properties</span>. The template
+				file supplies a set of common directives that are referenced by all of the defined
+				PAS instances. Individual instance definitions contain only the properties that are
+				unique to the instance, such as the AJP13 network connection port. (See <a href="#table_oct_5tc_rs" class="MCXref xref">ExamplesAssume there are:Two registered instances (piw1 and
+							piw2) that serve Web applicationsA Tomcat load balancer instance (jklb) that distributes
+						the workload between piw1 and
+						piw2A status instance (jkstatus) that is used to monitor
+						the runtime status of piw1 and
+							piw2The following are examples of worker-lists showing various combinations of
+				keywords and instances, and the resulting content in
+					$CATALINA_HOME/temp/worker.properties:worker-list keywordsworker-listResulting content in worker.propertiesblankDefault entries from worker.template plus
+								entries for piw1 and
+								piw2piw1Default entries from worker.template plus an entry for
+									piw1allDefault entries from worker.template plus entries for
+									piw1 and piw2homeDefault entries from worker.template plus an entry for core
+								server (CATALINA_HOME) home, allDefault entries from worker.template plus an entry for core
+								server, (CATALINA_HOME), and entries for for
+									piw1 and piw2lb, statusDefault entries from worker.template plus entries for
+									jklb, jstatus,
+									piw1, and
+									piw2Note: When no registered instance is
+									specified, all registered instances are automatically included.
+								lb, status, home, allDefault entries from worker.template plus entries for
+									jklb, jstatus, the
+								core server (CATALINA_HOME),piw1, and
+									piw2The following is an example workers.properties file that
+				includes entries for instances piw1 and
+				piw2:worker.properties example# worker properties for instances rooted at U:\vobs\dlc\servers\pasw
+# build date: 03/24/2014 11:09:23 
+
+# List of worker server instances
+worker.list=piw1,piw2 
+
+#
+# Global properties
+#
+# worker.maintain=60 
+
+#
+# Common worker properties referenced by individual workers
+#
+worker.common.type=ajp13
+worker.common.host=${psc.as.host.name}
+worker.common.socket_timeout=10
+worker.common.connect_timeout=10000
+worker.common.socket_keepalive=true
+worker.common.ping_mode=I
+worker.common.ping_timeout=10000
+worker.common.connect_timeout=0
+worker.common.retry_interval=100
+worker.common.recovery_options=7
+# worker.common.connection_ping_interval=10000
+# worker.common.fail_on_status=0# worker.common.max_packet_size=8192
+# worker.common.recover_time=60  
+
+# properties for alias piw1 with jvmRoute piw1
+worker.piw1.port=9996
+worker.piw1.reference=worker.common 
+
+# properties for alias piw2 with jvmRoute piw2
+worker.piw2.port=9996
+worker.piw2.reference=worker.common</a>.)</p>
+                                                    <p>The <span class="filepath">/temp/worker.properties</span> created by the
+					<span class="cmdname">workers</span> action is a preliminary configuration file that you
+				will probably need to modify to implement your deployment. See <a target="_blank" href="https://tomcat.apache.org/connectors-doc/reference/workers.html">The Apache Tomcat Connector-Reference
+					Guide</a> for more information about configuring workers.</p>
+                                                </div>
+                                                <div class="section">
+                                                    <h2 class="sectiontitle" id="Syntax" data-magellan-target="Syntax">Syntax</h2>
+                                                    <table style="border-top-style: solid;border-top-width: thin;border-top-color: gray;border-bottom-style: solid;border-bottom-width: thin;border-bottom-color: gray;border-left-style: solid;border-left-width: thin;border-left-color: gray;border-right-style: solid;border-right-width: thin;border-right-color: gray;border-collapse: collapse;mc-table-style: url('../Resources/TableStyles/ib-table.css');" class="TableStyle-ibplatform01" cellspacing="0">
+                                                        <col title="c1" style="width: 1.0;" class="TableStyle-ibplatform01-Column-Column1" />
+                                                        <tbody>
+                                                            <tr class="TableStyle-ibplatform01-Body-Body1">
+                                                                <td class="TableStyle-ibplatform01-BodyA-Column1-Body1"><pre class="OE">$CATALINA_HOME/tcman.sh workers <b class="synmeta">[</b><span class="varname">general_options</span><b class="synmeta">]</b><b class="synmeta">[</b><span class="varname">worker_list</span><b class="synmeta">]</b></pre>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="section">
+                                                    <h2 class="sectiontitle" id="Parameters" data-magellan-target="Parameters">Parameters</h2>
+                                                    <div class="parml">
+                                                        <div class="plentry">
+                                                            <p class="pt"><span class="varname">general_options</span>
+                                                            </p>
+                                                            <p class="pd">Specify one or more of the general TCMAN options. Run <code>tcman.sh help worker</code> to see which general
+						options are appropriate.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="parml">
+                                                        <div class="plentry">
+                                                            <p class="pt">worker_list</p>
+                                                            <p class="pd">A comma separated list of instance names and/or keywords. The keywords are:<table style="border-top-style: solid;border-top-width: thin;border-top-color: gray;border-bottom-style: solid;border-bottom-width: thin;border-bottom-color: gray;border-left-style: solid;border-left-width: thin;border-left-color: gray;border-right-style: solid;border-right-width: thin;border-right-color: gray;border-collapse: collapse;mc-table-style: url('../Resources/TableStyles/ib-table.css');" class="TableStyle-ibplatform01" cellspacing="0"><col title="c1" style="width: 1;" class="TableStyle-ibplatform01-Column-Column1" /><col title="c2" style="width: 2.85;" class="TableStyle-ibplatform01-Column-Column1" /><tbody><tr class="TableStyle-ibplatform01-Body-Body1"><td style="border-top-style: solid; border-top-width: thin; border-top-color: gray; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: gray; border-left-style: solid; border-left-width: thin; border-left-color: gray; border-right-style: solid; border-right-width: thin; border-right-color: gray;" class="TableStyle-ibplatform01-BodyE-Column1-Body1">status</td><td style="border-top-style: solid; border-top-width: thin; border-top-color: gray; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: gray; border-left-style: solid; border-left-width: thin; border-left-color: gray; border-right-style: solid; border-right-width: thin; border-right-color: gray;" class="TableStyle-ibplatform01-BodyD-Column1-Body1">Include an instance that has been implemented as a status
+											server</td></tr><tr class="TableStyle-ibplatform01-Body-Body1"><td style="border-top-style: solid; border-top-width: thin; border-top-color: gray; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: gray; border-left-style: solid; border-left-width: thin; border-left-color: gray; border-right-style: solid; border-right-width: thin; border-right-color: gray;" class="TableStyle-ibplatform01-BodyE-Column1-Body1">lb</td><td style="border-top-style: solid; border-top-width: thin; border-top-color: gray; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: gray; border-left-style: solid; border-left-width: thin; border-left-color: gray; border-right-style: solid; border-right-width: thin; border-right-color: gray;" class="TableStyle-ibplatform01-BodyD-Column1-Body1">Include an instance that has been implemented as a load balance
+											server</td></tr><tr class="TableStyle-ibplatform01-Body-Body1"><td style="border-top-style: solid; border-top-width: thin; border-top-color: gray; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: gray; border-left-style: solid; border-left-width: thin; border-left-color: gray; border-right-style: solid; border-right-width: thin; border-right-color: gray;" class="TableStyle-ibplatform01-BodyE-Column1-Body1">home</td><td style="border-top-style: solid; border-top-width: thin; border-top-color: gray; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: gray; border-left-style: solid; border-left-width: thin; border-left-color: gray; border-right-style: solid; border-right-width: thin; border-right-color: gray;" class="TableStyle-ibplatform01-BodyD-Column1-Body1">Include the CATALINA_HOME core server</td></tr><tr class="TableStyle-ibplatform01-Body-Body1"><td style="border-top-style: solid; border-top-width: thin; border-top-color: gray; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: gray; border-left-style: solid; border-left-width: thin; border-left-color: gray; border-right-style: solid; border-right-width: thin; border-right-color: gray;" class="TableStyle-ibplatform01-BodyB-Column1-Body1">all</td><td style="border-top-style: solid; border-top-width: thin; border-top-color: gray; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: gray; border-left-style: solid; border-left-width: thin; border-left-color: gray; border-right-style: solid; border-right-width: thin; border-right-color: gray;" class="TableStyle-ibplatform01-BodyA-Column1-Body1">Include all registered instances</td></tr></tbody></table><p>If no <code><span class="varname">worker_list</span></code> is
+							specified, the default worker list (all instances registered to
+							CATALINA_HOME) will be added. If no instances have been created, then
+							the default <code><span class="varname">worker_list</span></code> is
+							CATALINA_HOME.</p></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="section">&#160;</div>
+                                                <div class="section">
+                                                    <h2 class="sectiontitle" id="Examples" data-magellan-target="Examples">Examples</h2>
+                                                    <p>Assume there are:<ul><li>Two registered instances (<span class="filepath">piw1</span> and
+							<span class="filepath">piw2</span>) that serve Web applications</li><li>A Tomcat load balancer instance (<span class="filepath">jklb</span>) that distributes
+						the workload between <span class="filepath">piw1</span> and
+						<span class="filepath">piw2</span></li><li>A status instance (<span class="filepath">jkstatus</span>) that is used to monitor
+						the runtime status of <span class="filepath">piw1</span> and
+							<span class="filepath">piw2</span></li></ul></p>
+                                                    <p>The following are examples of worker-lists showing various combinations of
+				keywords and instances, and the resulting content in
+					<span class="filepath">$CATALINA_HOME/temp/worker.properties</span>:</p>
+                                                    <table style="border-top-style: solid;border-top-width: thin;border-top-color: gray;border-bottom-style: solid;border-bottom-width: thin;border-bottom-color: gray;border-left-style: solid;border-left-width: thin;border-left-color: gray;border-right-style: solid;border-right-width: thin;border-right-color: gray;border-collapse: collapse;mc-table-style: url('../Resources/TableStyles/ib-table.css');width: 677px;" class="TableStyle-ibplatform01" cellspacing="0">
+                                                        <caption><span class="tabletitle">worker-list keywords</span>
+                                                        </caption>
+                                                        <col title="c1" style="width: 1;" class="TableStyle-ibplatform01-Column-Column1" />
+                                                        <col title="c2" style="width: 2.77;" class="TableStyle-ibplatform01-Column-Column1" />
+                                                        <thead>
+                                                            <tr class="TableStyle-ibplatform01-Head-Header1">
+                                                                <th style="border-top-style: solid; border-top-width: thin; border-top-color: gray; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: gray; border-left-style: solid; border-left-width: thin; border-left-color: gray; border-right-style: solid; border-right-width: thin; border-right-color: gray;" class="TableStyle-ibplatform01-HeadE-Column1-Header1">worker-list</th>
+                                                                <th style="border-top-style: solid; border-top-width: thin; border-top-color: gray; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: gray; border-left-style: solid; border-left-width: thin; border-left-color: gray; border-right-style: solid; border-right-width: thin; border-right-color: gray;" class="TableStyle-ibplatform01-HeadD-Column1-Header1">Resulting content in worker.properties</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="TableStyle-ibplatform01-Body-Body1">
+                                                                <td style="border-top-style: solid; border-top-width: thin; border-top-color: gray; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: gray; border-left-style: solid; border-left-width: thin; border-left-color: gray; border-right-style: solid; border-right-width: thin; border-right-color: gray;" class="TableStyle-ibplatform01-BodyE-Column1-Body1"><code><span class="varname">blank</span></code>
+                                                                </td>
+                                                                <td style="border-top-style: solid; border-top-width: thin; border-top-color: gray; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: gray; border-left-style: solid; border-left-width: thin; border-left-color: gray; border-right-style: solid; border-right-width: thin; border-right-color: gray;" class="TableStyle-ibplatform01-BodyD-Column1-Body1">Default entries from <span class="filepath">worker.template</span> plus
+								entries for <span class="filepath">piw1</span> and
+								<span class="filepath">piw2</span></td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ibplatform01-Body-Body1">
+                                                                <td style="border-top-style: solid; border-top-width: thin; border-top-color: gray; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: gray; border-left-style: solid; border-left-width: thin; border-left-color: gray; border-right-style: solid; border-right-width: thin; border-right-color: gray;" class="TableStyle-ibplatform01-BodyE-Column1-Body1"><span class="filepath">piw1</span>
+                                                                </td>
+                                                                <td style="border-top-style: solid; border-top-width: thin; border-top-color: gray; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: gray; border-left-style: solid; border-left-width: thin; border-left-color: gray; border-right-style: solid; border-right-width: thin; border-right-color: gray;" class="TableStyle-ibplatform01-BodyD-Column1-Body1">Default entries from <span class="filepath">worker.template</span> plus an entry for
+									<span class="filepath">piw1</span></td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ibplatform01-Body-Body1">
+                                                                <td style="border-top-style: solid; border-top-width: thin; border-top-color: gray; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: gray; border-left-style: solid; border-left-width: thin; border-left-color: gray; border-right-style: solid; border-right-width: thin; border-right-color: gray;" class="TableStyle-ibplatform01-BodyE-Column1-Body1"><code>all</code>
+                                                                </td>
+                                                                <td style="border-top-style: solid; border-top-width: thin; border-top-color: gray; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: gray; border-left-style: solid; border-left-width: thin; border-left-color: gray; border-right-style: solid; border-right-width: thin; border-right-color: gray;" class="TableStyle-ibplatform01-BodyD-Column1-Body1">Default entries from <span class="filepath">worker.template</span> plus entries for
+									<span class="filepath">piw1</span> and <span class="filepath">piw2</span></td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ibplatform01-Body-Body1">
+                                                                <td style="border-top-style: solid; border-top-width: thin; border-top-color: gray; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: gray; border-left-style: solid; border-left-width: thin; border-left-color: gray; border-right-style: solid; border-right-width: thin; border-right-color: gray;" class="TableStyle-ibplatform01-BodyE-Column1-Body1"><code>home</code>
+                                                                </td>
+                                                                <td style="border-top-style: solid; border-top-width: thin; border-top-color: gray; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: gray; border-left-style: solid; border-left-width: thin; border-left-color: gray; border-right-style: solid; border-right-width: thin; border-right-color: gray;" class="TableStyle-ibplatform01-BodyD-Column1-Body1">Default entries from <span class="filepath">worker.template</span> plus an entry for core
+								server (CATALINA_HOME) </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ibplatform01-Body-Body1">
+                                                                <td style="border-top-style: solid; border-top-width: thin; border-top-color: gray; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: gray; border-left-style: solid; border-left-width: thin; border-left-color: gray; border-right-style: solid; border-right-width: thin; border-right-color: gray;" class="TableStyle-ibplatform01-BodyE-Column1-Body1"><code>home, all</code>
+                                                                </td>
+                                                                <td style="border-top-style: solid; border-top-width: thin; border-top-color: gray; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: gray; border-left-style: solid; border-left-width: thin; border-left-color: gray; border-right-style: solid; border-right-width: thin; border-right-color: gray;" class="TableStyle-ibplatform01-BodyD-Column1-Body1">Default entries from <span class="filepath">worker.template</span> plus an entry for core
+								server, (CATALINA_HOME), and entries for for
+									<span class="filepath">piw1</span> and <span class="filepath">piw2</span></td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ibplatform01-Body-Body1">
+                                                                <td style="border-top-style: solid; border-top-width: thin; border-top-color: gray; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: gray; border-left-style: solid; border-left-width: thin; border-left-color: gray; border-right-style: solid; border-right-width: thin; border-right-color: gray;" class="TableStyle-ibplatform01-BodyE-Column1-Body1"><code>lb, status</code>
+                                                                </td>
+                                                                <td style="border-top-style: solid; border-top-width: thin; border-top-color: gray; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: gray; border-left-style: solid; border-left-width: thin; border-left-color: gray; border-right-style: solid; border-right-width: thin; border-right-color: gray;" class="TableStyle-ibplatform01-BodyD-Column1-Body1">Default entries from <span class="filepath">worker.template</span> plus entries for
+									<span class="filepath">jklb</span>,<span class="filepath"> jstatus</span>,
+									<span class="filepath">piw1</span>, and
+									<span class="filepath">piw2</span><div class="note"><b>Note: </b>When no registered instance is
+									specified, all registered instances are automatically included.
+								</div></td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ibplatform01-Body-Body1">
+                                                                <td style="border-top-style: solid; border-top-width: thin; border-top-color: gray; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: gray; border-left-style: solid; border-left-width: thin; border-left-color: gray; border-right-style: solid; border-right-width: thin; border-right-color: gray;" class="TableStyle-ibplatform01-BodyB-Column1-Body1"><code>lb, status, home, all</code>
+                                                                </td>
+                                                                <td style="border-top-style: solid; border-top-width: thin; border-top-color: gray; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: gray; border-left-style: solid; border-left-width: thin; border-left-color: gray; border-right-style: solid; border-right-width: thin; border-right-color: gray;" class="TableStyle-ibplatform01-BodyA-Column1-Body1">Default entries from <span class="filepath">worker.template</span> plus entries for
+									<span class="filepath">jklb</span>,<span class="filepath"> jstatus</span>, the
+								core server (CATALINA_HOME),<span class="filepath">piw1</span>, and
+									<span class="filepath">piw2</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p>The following is an example <span class="filepath">workers.properties</span> file that
+				includes entries for instances <span class="filepath">piw1</span> and
+				<span class="filepath">piw2</span>:</p>
+                                                    <table style="border-top-style: solid;border-top-width: thin;border-top-color: gray;border-bottom-style: solid;border-bottom-width: thin;border-bottom-color: gray;border-left-style: solid;border-left-width: thin;border-left-color: gray;border-right-style: solid;border-right-width: thin;border-right-color: gray;border-collapse: collapse;mc-table-style: url('../Resources/TableStyles/ib-table.css');" class="TableStyle-ibplatform01" cellspacing="0">
+                                                        <caption><span class="tabletitle">worker.properties example</span>
+                                                        </caption><a name="table_oct_5tc_rs"></a>
+                                                        <col title="c1" style="width: 1.0;" class="TableStyle-ibplatform01-Column-Column1" />
+                                                        <tbody>
+                                                            <tr class="TableStyle-ibplatform01-Body-Body1">
+                                                                <td style="border-top-style: solid; border-top-width: thin; border-top-color: gray; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: gray; border-left-style: solid; border-left-width: thin; border-left-color: gray; border-right-style: solid; border-right-width: thin; border-right-color: gray;" class="TableStyle-ibplatform01-BodyA-Column1-Body1"><pre># worker properties for instances rooted at U:\vobs\dlc\servers\pasw
+# build date: 03/24/2014 11:09:23 
+
+# List of worker server instances
+worker.list=piw1,piw2 
+
+#
+# Global properties
+#
+# worker.maintain=60 
+
+#
+# Common worker properties referenced by individual workers
+#
+worker.common.type=ajp13
+worker.common.host=${psc.as.host.name}
+worker.common.socket_timeout=10
+worker.common.connect_timeout=10000
+worker.common.socket_keepalive=true
+worker.common.ping_mode=I
+worker.common.ping_timeout=10000
+worker.common.connect_timeout=0
+worker.common.retry_interval=100
+worker.common.recovery_options=7
+# worker.common.connection_ping_interval=10000
+# worker.common.fail_on_status=0# worker.common.max_packet_size=8192
+# worker.common.recover_time=60  
+
+# properties for alias piw1 with jvmRoute piw1
+worker.piw1.port=9996
+worker.piw1.reference=worker.common 
+
+# properties for alias piw2 with jvmRoute piw2
+worker.piw2.port=9996
+worker.piw2.reference=worker.common</pre>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="section">
+                                                    <h2 class="sectiontitle" id="Notes" data-magellan-target="Notes">Notes</h2>
+                                                    <ul>
+                                                        <li>The <code>tcman workers</code> action must be run from the PAS
+					installation's <span class="filepath">$CATALINA_HOME/bin directory</span>.</li>
+                                                        <li>The <span class="filepath">/extras/workers.template</span> file can be modified to adjust
+					existing properties or to add additional static information. However, you cannot
+					replace the common properties with a unique set of properties for each defined
+					server.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <p id="return-to-top"><a href="#top"><img src="../xebresources/evbg/arrow_circle_up_24dp_1f1f1f_fill0_wght400_grad0_opsz24.png" /></a>
+                                            </p>
+                                        </div>
+                                        <div class="topicnav-wrapper">
+                                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbarProxy mc-component nocontent" style="mc-topic-toolbar-items: Back QuickSearch AddTopicToFavorites;">
+                                                <div class="button-group-container-left">
+                                                    <button class="button needs-pie previous-topic-button" title="Go back" disabled="true">
+                                                        <div>
+                                                            <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                                <div class="button-icon"> </div>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                    <button class="button needs-pie next-topic-button" title="See what's next" disabled="true">
+                                                        <div>
+                                                            <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                                <div class="button-icon"> </div>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <br />
+                                            <h4>In this topic</h4>
+                                            <div class="sticky-container">
+                                                <div data-sticky-container="" id="pRP8gK_qn0Wzl9KHVtutfA">
+                                                    <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="pRP8gK_qn0Wzl9KHVtutfA:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 1201px)" data-scroll-container-on="only screen and (min-width: 1201px)">
+                                                        <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1201px)" class="topicMenu menu _Skins_TopicMenuProxy mc-component">
+                                                            <li class="tree-node"><a href="#CreateaTomcatworkerconfigurationfileworkers">Create a Tomcat worker configuration file (workers)</a>
+                                                            </li>
+                                                            <li>
+                                                                <ul>
+                                                                    <li class="tree-node"><a href="#Purpose">Purpose</a>
+                                                                    </li>
+                                                                    <li class="tree-node"><a href="#Syntax">Syntax</a>
+                                                                    </li>
+                                                                    <li class="tree-node"><a href="#Parameters">Parameters</a>
+                                                                    </li>
+                                                                    <li class="tree-node"><a href="#Examples">Examples</a>
+                                                                    </li>
+                                                                    <li class="tree-node"><a href="#Notes">Notes</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="home-footer">
+                                        <table style="width: 100%;border-top-style: solid;border-top-width: 1px;border-top-color: #808080;">
+                                            <col />
+                                            <col />
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p> </p>
+                                                    </td>
+                                                    <td style="text-align: left;">
+                                                        <p>Content © 2025 Everbridge, Inc. All rights reserved. </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

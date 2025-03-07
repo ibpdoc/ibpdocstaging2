@@ -909,113 +909,1103 @@ div.central-dropdown-content > a:hover
 	-pie-background: linear-gradient(transparent, #ffffff);
 }
 
-ul.menu._Skins_topic_menu.mc-component
+.buttons._Skins_TopicToolbarProxy.mc-component
+{
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+._Skins_TopicToolbarProxy.mc-component .button
+{
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border-left: solid 1px #e1e1e1;
+	border-right: solid 1px #e1e1e1;
+	border-top: solid 1px #e1e1e1;
+	border-bottom: solid 1px #e1e1e1;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 22px;
+	height: 22px;
+	background: #ececec;
+	background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
+	background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%);
+	background: linear-gradient(#ffffff 0%,#ececec 100%);
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+._Skins_TopicToolbarProxy.mc-component .button > div
+{
+	flex-direction: row;
+}
+
+._Skins_TopicToolbarProxy.mc-component .button .button-icon
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button .button-icon-wrapper
+{
+	width: 22px;
+	height: 22px;
+}
+
+._Skins_TopicToolbarProxy.mc-component .button .button-text
 {
 	color: #000000;
-	font-family: Helvetica;
-	font-size: 12pt;
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.collapse-all-button
+{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background: #ececec;
+	background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
+	background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%);
+	background: linear-gradient(#ffffff 0%,#ececec 100%);
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.collapse-all-button > div
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.collapse-all-button .button-icon
+{
+	background: transparent url('Images/collapse.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/collapse.png');
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.collapse-all-button .button-icon-wrapper
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.collapse-all-button .button-text
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.current-topic-index-button
+{
+	color: #6c6c6c;
+	font-size: 11px;
+	font-weight: bold;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: auto;
+	background: #ececec;
+	background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
+	background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%);
+	background: linear-gradient(#ffffff 0%,#ececec 100%);
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.edit-user-profile-button
+{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background: #ececec;
+	background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
+	background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%);
+	background: linear-gradient(#ffffff 0%,#ececec 100%);
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.edit-user-profile-button > div
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.edit-user-profile-button .button-icon
+{
+	background: transparent url('Images/edit-profile.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/edit-profile.png');
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.edit-user-profile-button .button-icon-wrapper
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.edit-user-profile-button .button-text
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.expand-all-button
+{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background: #ececec;
+	background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
+	background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%);
+	background: linear-gradient(#ffffff 0%,#ececec 100%);
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.expand-all-button > div
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.expand-all-button .button-icon
+{
+	background: transparent url('Images/expand.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/expand.png');
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.expand-all-button .button-icon-wrapper
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.expand-all-button .button-text
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.login-button
+{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background: #ececec;
+	background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
+	background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%);
+	background: linear-gradient(#ffffff 0%,#ececec 100%);
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.login-button > div
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.login-button .button-icon
+{
+	background: transparent url('Images/login.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/login.png');
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.login-button .button-icon-wrapper
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.login-button .button-text
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.next-topic-button
+{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background: #ececec;
+	background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
+	background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%);
+	background: linear-gradient(#ffffff 0%,#ececec 100%);
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.next-topic-button > div
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.next-topic-button .button-icon
+{
+	background: transparent url('Images/icon-arrowRight-16x16.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/icon-arrowRight-16x16.png');
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.next-topic-button .button-icon-wrapper
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.next-topic-button .button-text
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.previous-topic-button
+{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background: #ececec;
+	background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
+	background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%);
+	background: linear-gradient(#ffffff 0%,#ececec 100%);
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.previous-topic-button > div
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.previous-topic-button .button-icon
+{
+	background: transparent url('Images/icon-arrowLeft-16x16.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/icon-arrowLeft-16x16.png');
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.previous-topic-button .button-icon-wrapper
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.previous-topic-button .button-text
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.print-button
+{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background: #ececec;
+	background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
+	background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%);
+	background: linear-gradient(#ffffff 0%,#ececec 100%);
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.print-button > div
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.print-button .button-icon
+{
+	background: transparent url('Images/icon-print-16x16-gray.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/icon-print-16x16-gray.png');
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.print-button .button-icon-wrapper
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.print-button .button-text
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.remove-highlight-button
+{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background: #ececec;
+	background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
+	background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%);
+	background: linear-gradient(#ffffff 0%,#ececec 100%);
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.remove-highlight-button > div
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.remove-highlight-button .button-icon
+{
+	background: transparent url('Images/highlight.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/highlight.png');
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.remove-highlight-button .button-icon-wrapper
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.remove-highlight-button .button-text
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.select-language-button
+{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background: #ececec;
+	background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
+	background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%);
+	background: linear-gradient(#ffffff 0%,#ececec 100%);
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.select-language-button > div
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.select-language-button .button-icon
+{
+	background: transparent url('Images/select-language.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/select-language.png');
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.select-language-button .button-icon-wrapper
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.select-language-button .button-text
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.select-skin-button
+{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background: #ececec;
+	background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
+	background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%);
+	background: linear-gradient(#ffffff 0%,#ececec 100%);
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.select-skin-button > div
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.select-skin-button .button-icon
+{
+	background: transparent url('Images/select-skin.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/select-skin.png');
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.select-skin-button .button-icon-wrapper
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.select-skin-button .button-text
+{
+	
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.topic-ratings-button
+{
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+	width: 16px;
+	background: transparent url('Images/star-full.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/star-full.png') no-repeat center center;
+	background-size: 16px 16px;
+}
+
+._Skins_TopicToolbarProxy.mc-component .button.topic-ratings-empty-button
+{
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+	width: 16px;
+	background: transparent url('Images/star-empty.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/star-empty.png') no-repeat center center;
+	background-size: 16px 16px;
+}
+
+._Skins_TopicToolbarProxy.mc-component .toolbar-button-drop-down
+{
+	color: #707070;
+	border-left: solid 4px transparent;
+	border-right: solid 4px transparent;
+	border-top: solid 4px transparent;
+	border-bottom: solid 4px transparent;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	background-color: #FFFFFF;
+}
+
+._Skins_TopicToolbarProxy.mc-component .toolbar-button-drop-down.select-language-drop-down
+{
+	background-color: #FFFFFF;
+}
+
+._Skins_TopicToolbarProxy.mc-component .toolbar-button-drop-down.select-language-drop-down ul li:hover
+{
+	color: #000;
+	background-color: #E5EFF7;
+}
+
+._Skins_TopicToolbarProxy.mc-component .toolbar-button-drop-down.select-skin-drop-down
+{
+	background-color: #FFFFFF;
+}
+
+._Skins_TopicToolbarProxy.mc-component .toolbar-button-drop-down.select-skin-drop-down ul li:hover
+{
+	color: #000;
+	background-color: #E5EFF7;
+}
+
+._Skins_TopicToolbarProxy.mc-component .button-separator
+{
+	color: #e1e1e1;
+	background-color: #e1e1e1;
+	height: 24px;
+}
+
+._Skins_EBFD_searchResults.mc-component .featured-snippets-container
+{
+	
+}
+
+._Skins_EBFD_searchResults.mc-component #knowledge-panel
+{
+	width: 26%;
+	order: 1;
+	display: block;
+}
+
+._Skins_EBFD_searchResults.mc-component #search-results-flex
+{
+	column-gap: 25px;
+}
+
+._Skins_EBFD_searchResults.mc-component .knowledge-panel-container
+{
+	
+}
+
+._Skins_EBFD_searchResults.mc-component #knowledge-panel-middle
+{
+	display: none;
+}
+
+._Skins_EBFD_searchResults.mc-component .knowledge-panel-container .micro-content-drop-down-button
+{
+	margin-right: 5px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+	width: 20px;
+	height: 20px;
+}
+
+._Skins_EBFD_searchResults.mc-component .knowledge-panel-container .micro-content-expanded .micro-content-drop-down-button
+{
+	background: transparent url('Images/arrow-up.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/arrow-up.png') no-repeat center center;
+}
+
+._Skins_EBFD_searchResults.mc-component .knowledge-panel-container .micro-content-collapsed .micro-content-drop-down-button
+{
+	background: transparent url('Images/arrow-down.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/arrow-down.png') no-repeat center center;
+}
+
+._Skins_EBFD_searchResults.mc-component .knowledge-panel-container .micro-content-phrase span
+{
+	color: #606060;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+._Skins_EBFD_searchResults.mc-component .knowledge-panel-container .micro-content-phrase
+{
+	
+}
+
+._Skins_EBFD_searchResults.mc-component .knowledge-panel-container.micro-content-optional-phrase .micro-content-phrase
+{
+	display: none;
+}
+
+._Skins_EBFD_searchResults.mc-component .knowledge-panel-container .micro-response
+{
+	
+}
+
+._Skins_EBFD_searchResults.mc-component .knowledge-panel-container.micro-content-truncated-mode .micro-response
+{
+	max-height: none;
+}
+
+._Skins_EBFD_searchResults.mc-component .knowledge-panel-container .micro-response-title a
+{
+	color: #2200c1;
+	text-decoration: underline;
+}
+
+._Skins_EBFD_searchResults.mc-component .knowledge-panel-container .micro-response-title
+{
+	margin-top: 10px;
+	margin-bottom: 2px;
+}
+
+._Skins_EBFD_searchResults.mc-component .knowledge-panel-container .micro-response-title a:visited
+{
+	
+}
+
+._Skins_EBFD_searchResults.mc-component .knowledge-panel-container .micro-response-title a:focus
+{
+	
+}
+
+._Skins_EBFD_searchResults.mc-component .knowledge-panel-container .micro-response-title a:hover
+{
+	
+}
+
+._Skins_EBFD_searchResults.mc-component .knowledge-panel-container .micro-response-title a:active
+{
+	
+}
+
+._Skins_EBFD_searchResults.mc-component .knowledge-panel-container .micro-response-url cite
+{
+	color: #0e774a;
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+._Skins_EBFD_searchResults.mc-component .knowledge-panel-container .micro-response-url
+{
+	
+}
+
+._Skins_EBFD_searchResults.mc-component .knowledge-panel-container .micro-content
+{
+	margin-bottom: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-position: center center;
+}
+
+._Skins_EBFD_searchResults.mc-component .knowledge-panel-container .micro-content-expand
+{
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-left: none;
+	border-right: none;
+	border-top: solid 1px #b9bec1;
+	border-bottom: solid 1px #b9bec1;
+	height: 40px;
+}
+
+._Skins_EBFD_searchResults.mc-component .knowledge-panel-container .micro-content-expanded .micro-content-expand
+{
+	background: transparent url('Images/arrow-up.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/arrow-up.png') no-repeat center center;
+}
+
+._Skins_EBFD_searchResults.mc-component .knowledge-panel-container .micro-content-collapsed .micro-content-expand
+{
+	background: transparent url('Images/arrow-down.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/arrow-down.png') no-repeat center center;
+}
+
+._Skins_EBFD_searchResults.mc-component .knowledge-panel-container.micro-content-truncated-mode .micro-content-expand-transition
+{
+	height: 50px;
+	background: -moz-linear-gradient(top, transparent 0%, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,#ffffff));
+	background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+	background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
+	background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
+	background: linear-gradient(transparent 0%,#ffffff 100%);
+	-pie-background: linear-gradient(transparent, #ffffff);
+}
+
+._Skins_EBFD_searchResults.mc-component #resultList .glossary .definition
+{
+	
+}
+
+._Skins_EBFD_searchResults.mc-component #resultList .glossary
+{
+	margin-bottom: 25px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-position: center center;
+}
+
+._Skins_EBFD_searchResults.mc-component #resultList .glossary .term
+{
+	font-size: 1.5em;
+	margin-bottom: 10px;
+}
+
+._Skins_EBFD_searchResults.mc-component #resultList .glossary .term a
+{
+	
+}
+
+._Skins_EBFD_searchResults.mc-component #resultList .glossary .term a:visited
+{
+	
+}
+
+._Skins_EBFD_searchResults.mc-component #resultList .glossary .term a:focus
+{
+	
+}
+
+._Skins_EBFD_searchResults.mc-component #resultList .glossary .term a:hover
+{
+	
+}
+
+._Skins_EBFD_searchResults.mc-component #resultList .glossary .term a:active
+{
+	
+}
+
+._Skins_EBFD_searchResults.mc-component h1#results-heading
+{
+	color: #393f45;
+	font-size: 1.5em;
+	font-weight: bold;
+	font-style: normal;
+}
+
+._Skins_EBFD_searchResults.mc-component #results-heading
+{
+	border-bottom: solid 1px #EBEBEB;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+
+._Skins_EBFD_searchResults.mc-component .featured-snippets-container .micro-content-drop-down-button
+{
+	margin-right: 5px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+	width: 20px;
+	height: 20px;
+}
+
+._Skins_EBFD_searchResults.mc-component .featured-snippets-container .micro-content-expanded .micro-content-drop-down-button
+{
+	background: transparent url('Images/arrow-up.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/arrow-up.png') no-repeat center center;
+}
+
+._Skins_EBFD_searchResults.mc-component .featured-snippets-container .micro-content-collapsed .micro-content-drop-down-button
+{
+	background: transparent url('Images/arrow-down.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/arrow-down.png') no-repeat center center;
+}
+
+._Skins_EBFD_searchResults.mc-component .featured-snippets-container .micro-content-phrase span
+{
+	color: #606060;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+._Skins_EBFD_searchResults.mc-component .featured-snippets-container .micro-content-phrase
+{
+	
+}
+
+._Skins_EBFD_searchResults.mc-component .featured-snippets-container.micro-content-optional-phrase .micro-content-phrase
+{
+	display: none;
+}
+
+._Skins_EBFD_searchResults.mc-component .featured-snippets-container .micro-response
+{
+	
+}
+
+._Skins_EBFD_searchResults.mc-component .featured-snippets-container.micro-content-truncated-mode .micro-response
+{
+	max-height: 200px;
+}
+
+._Skins_EBFD_searchResults.mc-component .featured-snippets-container .micro-content-expand
+{
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-left: none;
+	border-right: none;
+	border-top: solid 1px #b9bec1;
+	border-bottom: solid 1px #b9bec1;
+	height: 40px;
+}
+
+._Skins_EBFD_searchResults.mc-component .featured-snippets-container .micro-content-expanded .micro-content-expand
+{
+	background: transparent url('Images/arrow-up.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/arrow-up.png') no-repeat center center;
+}
+
+._Skins_EBFD_searchResults.mc-component .featured-snippets-container .micro-content-collapsed .micro-content-expand
+{
+	background: transparent url('Images/arrow-down.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/arrow-down.png') no-repeat center center;
+}
+
+._Skins_EBFD_searchResults.mc-component .featured-snippets-container.micro-content-truncated-mode .micro-content-expand-transition
+{
+	height: 50px;
+	background: -moz-linear-gradient(top, transparent 0%, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,#ffffff));
+	background: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+	background: -o-linear-gradient(top, transparent 0%,#ffffff 100%);
+	background: -ms-linear-gradient(top, transparent 0%,#ffffff 100%);
+	background: linear-gradient(transparent 0%,#ffffff 100%);
+	-pie-background: linear-gradient(transparent, #ffffff);
+}
+
+._Skins_EBFD_searchResults.mc-component .featured-snippets-container .micro-response-title a
+{
+	color: #2200c1;
+	text-decoration: underline;
+}
+
+._Skins_EBFD_searchResults.mc-component .featured-snippets-container .micro-response-title
+{
+	margin-top: 10px;
+	margin-bottom: 2px;
+}
+
+._Skins_EBFD_searchResults.mc-component .featured-snippets-container .micro-response-title a:visited
+{
+	
+}
+
+._Skins_EBFD_searchResults.mc-component .featured-snippets-container .micro-response-title a:focus
+{
+	
+}
+
+._Skins_EBFD_searchResults.mc-component .featured-snippets-container .micro-response-title a:hover
+{
+	
+}
+
+._Skins_EBFD_searchResults.mc-component .featured-snippets-container .micro-response-title a:active
+{
+	
+}
+
+._Skins_EBFD_searchResults.mc-component .featured-snippets-container .micro-response-url cite
+{
+	color: #0e774a;
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+._Skins_EBFD_searchResults.mc-component .featured-snippets-container .micro-response-url
+{
+	
+}
+
+._Skins_EBFD_searchResults.mc-component .featured-snippets-container .micro-content
+{
+	margin-bottom: 25px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-position: center center;
+}
+
+._Skins_EBFD_searchResults.mc-component #pagination
+{
+	height: 2.5em;
+	line-height: 2.5em;
+}
+
+._Skins_EBFD_searchResults.mc-component #pagination a
+{
+	border-left: solid 1px #fafafc;
+	border-right: solid 1px #fafafc;
+	border-top: solid 1px #fafafc;
+	border-bottom: solid 1px #fafafc;
+	color: #0185D1;
+	font-size: 1em;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-decoration: none;
+}
+
+._Skins_EBFD_searchResults.mc-component #pagination a:hover
+{
+	border-top: solid 1px #e2e2e6;
+}
+
+._Skins_EBFD_searchResults.mc-component #pagination a#selected
+{
+	font-weight: bold;
+	border-top: solid 1px #e2e2e6;
+}
+
+._Skins_EBFD_searchResults.mc-component #resultList .description
+{
+	font-size: 0.8em;
+}
+
+._Skins_EBFD_searchResults.mc-component #resultList .gs-snippet
+{
+	font-size: 0.8em;
+}
+
+._Skins_EBFD_searchResults.mc-component #resultList h3.title a
+{
+	color: #0185D1;
+	font-size: 1em;
+}
+
+._Skins_EBFD_searchResults.mc-component #resultList h3.title
+{
+	margin-bottom: 2px;
+	text-decoration: none;
+}
+
+._Skins_EBFD_searchResults.mc-component #resultList h3.title a:visited
+{
+	color: #2200C1;
+	text-decoration: underline;
+}
+
+._Skins_EBFD_searchResults.mc-component #resultList h3.title a:focus
+{
+	color: #2200C1;
+	text-decoration: underline;
+}
+
+._Skins_EBFD_searchResults.mc-component #resultList h3.title a:hover
+{
+	text-decoration: underline;
+}
+
+._Skins_EBFD_searchResults.mc-component #resultList h3.title a:active
+{
+	color: #2200C1;
+	text-decoration: underline;
+}
+
+._Skins_EBFD_searchResults.mc-component #resultList .url cite
+{
+	color: #0E774A;
+	font-size: 0.8em;
+	font-style: normal;
+}
+
+._Skins_EBFD_searchResults.mc-component #resultList
+{
+	line-height: 1em;
+	text-align: left;
+	display: block;
+}
+
+._Skins_EBFD_searchResults.mc-component .phrase-suggest
+{
+	font-style: italic;
+}
+
+._Skins_EBFD_searchResults.mc-component .phrase-suggest a
+{
+	color: #2200C1;
+}
+
+ul.menu._Skins_TopicMenuProxy.mc-component
+{
+	color: #383A3B;
+	font-size: 0.9em;
 	font-weight: normal;
 	font-style: normal;
 	line-height: 1em;
+	border-left: none 2px #696969;
+	border-top: solid 0px #d3d3d3;
+	border-bottom: solid 0px #d3d3d3;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	width: 178px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 100%;
 	height: auto;
 	max-height: 100%;
 	background-color: #ffffff;
 }
 
-ul.menu._Skins_topic_menu.mc-component a
+ul.menu._Skins_TopicMenuProxy.mc-component a
 {
-	color: #000000;
-	font-family: Helvetica;
-	font-size: 12pt;
+	color: #383A3B;
+	font-size: 0.9em;
 	font-weight: normal;
 	font-style: normal;
 }
 
-ul.menu._Skins_topic_menu.mc-component li > a
+ul.menu._Skins_TopicMenuProxy.mc-component li > a
 {
-	font-size: 9pt;
-	line-height: 16pt;
+	font-weight: bold;
+	line-height: 1em;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	background-color: transparent;
 }
 
-ul.menu._Skins_topic_menu.mc-component ul > li > a
+ul.menu._Skins_TopicMenuProxy.mc-component ul > li > a
 {
-	font-size: 9pt;
+	color: #383A3B;
+	font-size: 0.9em;
+	font-weight: normal;
+	padding-left: 10px;
+	padding-top: 2px;
+	padding-bottom: 3px;
+	background-color: transparent;
+}
+
+ul.menu._Skins_TopicMenuProxy.mc-component ul ul > li > a
+{
+	color: #545759;
+	font-size: 0.9em;
+	font-weight: normal;
+	padding-left: 15px;
+	padding-bottom: 3px;
+	background-color: transparent;
+}
+
+ul.menu._Skins_TopicMenuProxy.mc-component ul ul ul > li > a
+{
+	color: #8D9295;
 	padding-left: 20px;
+	padding-bottom: 3px;
 	background-color: transparent;
 }
 
-ul.menu._Skins_topic_menu.mc-component ul ul > li > a
+ul.menu._Skins_TopicMenuProxy.mc-component ul ul ul ul > li > a
 {
-	font-size: 8.5pt;
-	padding-left: 20px;
+	white-space: nowrap;
+	margin-left: 0px;
+	padding-left: 22px;
+	padding-bottom: 3px;
 	background-color: transparent;
 }
 
-ul.menu._Skins_topic_menu.mc-component ul ul ul > li > a
+ul.menu._Skins_TopicMenuProxy.mc-component li > a.selected
 {
-	padding-left: 40px;
-	background-color: transparent;
-}
-
-ul.menu._Skins_topic_menu.mc-component ul ul ul ul > li > a
-{
-	padding-left: 45px;
-	background-color: transparent;
-}
-
-ul.menu._Skins_topic_menu.mc-component li > a.selected
-{
-	color: #0572ed;
 	font-weight: bold;
 	background-color: transparent;
 }
 
-ul.menu._Skins_topic_menu.mc-component li > a:hover
+ul.menu._Skins_TopicMenuProxy.mc-component li > a:hover
 {
-	color: #0572ed;
-	background-color: transparent;
+	background-color: #cacaca;
 }
 
-ul.menu._Skins_topic_menu.mc-component ul > li > a:hover
+ul.menu._Skins_TopicMenuProxy.mc-component ul > li > a:hover
 {
-	background-color: transparent;
+	color: #707477;
+	font-size: 1em;
+	background-color: #cacaca;
 }
 
-ul.menu._Skins_topic_menu.mc-component ul ul > li > a:hover
+ul.menu._Skins_TopicMenuProxy.mc-component ul ul > li > a:hover
 {
-	background-color: transparent;
+	color: #8D9295;
+	background-color: #cacaca;
 }
 
-ul.menu._Skins_topic_menu.mc-component ul ul ul > li > a:hover
+ul.menu._Skins_TopicMenuProxy.mc-component ul ul ul > li > a:hover
 {
-	background-color: transparent;
+	color: #696969;
+	background-color: #cacaca;
 }
 
-ul.menu._Skins_topic_menu.mc-component ul ul ul ul > li > a:hover
+ul.menu._Skins_TopicMenuProxy.mc-component ul ul ul ul > li > a:hover
 {
-	background-color: transparent;
+	color: #8D9295;
+	font-size: 1em;
+	background-color: #cacaca;
 }
 
-ul.menu._Skins_topic_menu.mc-component li > a.selected:hover
+ul.menu._Skins_TopicMenuProxy.mc-component li > a.selected:hover
 {
+	color: #696969;
 	font-weight: bold;
 	background-color: transparent;
 }

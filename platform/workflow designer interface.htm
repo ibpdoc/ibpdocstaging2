@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="reference _Skins_EBFD_Side_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Adding business logic |Workflow overview" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" /><title>Workflow Designer Interface</title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/stylesheets/styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/stylesheets/tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/stylesheets/mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/stylesheets/print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../resources/branding/branding.css" rel="stylesheet" type="text/css" />
+        <link href="../xebresources/stylesheets/eb-styles.css" rel="stylesheet" type="text/css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1200px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../communications/everbridge360.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <p>
+                                        <script type="text/javascript">/*<![CDATA[*/ $(window).resize(function() {
+				var winWidth = $(window).width();
+				if (winWidth > 1279) {
+				console.log('appendTo >1279');
+				$("#header-links").appendTo("div.logo-wrapper");
+				} else {
+				console.log('appendTo <1279');
+				$("#header-links").appendTo("#offCanvas .off-canvas-accordion");
+				}
+			});/*]]>*/</script>
+                                        <script>/* <![CDATA[ */
+				$( document ).ready(function() {
+				$('.MCTopicPopupHotSpot').removeClass('MCTopic').addClass('MCTopicPopup');
+				});
+
+				if (window.self != window.top) {
+				// topnav
+				$('div.title-bar-container').css('display','none');
+
+				// sidenav
+				$('nav.sidenav-wrapper').css('display','none');
+				
+				// topicnav
+				$('div.topicnav-wrapper').css('display','none');
+	
+				// tablet+phone
+				$('nav.title-bar').css('display','none');
+ 
+				$('a').attr('target','_parent');
+				}
+			/* ]]> */</script>
+                                    </p>
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div class="Responsive-8-4">
+                                        <div class="body-box">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 class="referencetitle" id="WorkflowDesignerInterface" data-magellan-target="WorkflowDesignerInterface"><a name="kanchor11"></a>Workflow Designer Interface</h1>
+                                                <p class="shortdesc">This topic describes the various components, fields and actions activities that
+		comprise the Workflow Designer interface.</p>
+                                                <div class="section">
+                                                    <h2 class="sectiontitle" id="WorkflowCanvas" data-magellan-target="WorkflowCanvas">Workflow Canvas</h2>
+                                                    <p>The Workflow Designer’s canvas is the place where you will perform the following
+				activities to create your workflow process.<ul><li>Design and rename a workflow process</li><li>Add new or use existing statuses</li><li>Connect statuses</li><li>Add new or associate existing actions to the workflow process</li><li>Show or hide the actions label</li><li>Move, resize and delete statuses and actions</li><li>Perform actions using the Canvas Toolbar options</li><li>Zoom and pan a workflow process</li><li>Close the workflow designer</li></ul></p>
+                                                </div>
+                                                <div class="section">
+                                                    <h2 class="sectiontitle" id="Statusespanel" data-magellan-target="Statusespanel">Statuses panel</h2>
+                                                    <p>The Statuses panel contents are hidden from the view by default, to provide more
+				space for the canvas. The panel allows you to drag statuses and use those in a
+				workflow process.</p>
+                                                    <p>Here’s a sample view of how a status appears on the canvas in different states.<div class="note"><b>Note: </b>You can
+					re-position a status by selecting and dragging it across the canvas and re-size
+					it by selecting and dragging its connector nodes.</div></p>
+                                                    <table class="TableStyle-ibplatform01" style="mc-table-style: url('../Resources/TableStyles/ib-table.css');" cellspacing="0">
+                                                        <thead>
+                                                            <tr class="TableStyle-ibplatform01-Head-Header1">
+                                                                <th class="TableStyle-ibplatform01-HeadE-Column1-Header1">State</th>
+                                                                <th class="TableStyle-ibplatform01-HeadD-Column1-Header1">Visual Status</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="TableStyle-ibplatform01-Body-Body1">
+                                                                <td class="TableStyle-ibplatform01-BodyE-Column1-Body1">Unsaved Status - Default</td>
+                                                                <td class="TableStyle-ibplatform01-BodyD-Column1-Body1">
+                                                                    <img src="fax1502104821856_157x32.jpg" style="width: 157;height: 32;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ibplatform01-Body-Body1">
+                                                                <td class="TableStyle-ibplatform01-BodyE-Column1-Body1">Unsaved/Saved - Unconnected Status  -Hover</td>
+                                                                <td class="TableStyle-ibplatform01-BodyD-Column1-Body1">
+                                                                    <img src="mor1502104824207_166x42.jpg" style="width: 166;height: 42;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ibplatform01-Body-Body1">
+                                                                <td class="TableStyle-ibplatform01-BodyE-Column1-Body1">Unsaved/Saved - Unconnected Status - Selection</td>
+                                                                <td class="TableStyle-ibplatform01-BodyD-Column1-Body1">
+                                                                    <img src="spr1502104827029_162x42.jpg" style="width: 162;height: 42;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ibplatform01-Body-Body1">
+                                                                <td class="TableStyle-ibplatform01-BodyE-Column1-Body1">Saved Unconnected Status - Default</td>
+                                                                <td class="TableStyle-ibplatform01-BodyD-Column1-Body1">
+                                                                    <img src="mwq1502105934685_157x41.jpg" style="width: 157;height: 41;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ibplatform01-Body-Body1">
+                                                                <td class="TableStyle-ibplatform01-BodyE-Column1-Body1">Saved Connected Status</td>
+                                                                <td class="TableStyle-ibplatform01-BodyD-Column1-Body1">
+                                                                    <img src="ufq1502104819749_159x40.jpg" style="width: 159;height: 40;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-ibplatform01-Body-Body1">
+                                                                <td class="TableStyle-ibplatform01-BodyB-Column1-Body1">Saved Default - Connected Status</td>
+                                                                <td class="TableStyle-ibplatform01-BodyA-Column1-Body1">
+                                                                    <img src="vpc1502104828988_161x40.jpg" style="width: 161;height: 40;" />
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="section">
+                                                    <h2 class="sectiontitle" id="ActionLabelShowHide" data-magellan-target="ActionLabelShowHide">Action Label – Show/Hide</h2>
+                                                    <p>As the name indicates, <span class="uicontrol">Action Label - Show/Hide</span> allows you to show/hide
+				the actions label from the workflow process diagram. This helps to save space and
+				visualize your statuses better. By default, the Action Label will be shown. An
+				action connector line is automatically created when you connect two saved statuses.
+				An Action pop up appears displaying the list of all existing actions if available
+				for the target status, when two statuses are connected. This helps you to change the
+				status to the target status. When there are no existing actions, the Actions pop up
+				will be populated only with an <b>Add New Action</b> icon. <div class="note"><b>Note: </b>You can re-position
+					an action by selecting and dragging it across the canvas and re-size it by
+					selecting and dragging its connector nodes.</div><img src="gvk1502106690574_478x196.jpg" style="width: 478;height: 196;" /></p>
+                                                    <p>Here’s a sample view of the <span class="uicontrol">Action Label</span>that shows existing actions for
+				the target status.<img src="tyv1502106694336_678x258.jpg" style="width: 678;height: 258;" /></p>
+                                                    <p>Here’s a sample view of how an action appears on the canvas in different
+					states.<table class="TableStyle-ibplatform01" style="mc-table-style: url('../Resources/TableStyles/ib-table.css');" cellspacing="0"><thead><tr class="TableStyle-ibplatform01-Head-Header1"><th class="TableStyle-ibplatform01-HeadE-Column1-Header1">State</th><th class="TableStyle-ibplatform01-HeadD-Column1-Header1">Action</th></tr></thead><tbody><tr class="TableStyle-ibplatform01-Body-Body1"><td class="TableStyle-ibplatform01-BodyE-Column1-Body1">Unsaved Action - Default</td><td class="TableStyle-ibplatform01-BodyD-Column1-Body1"><img src="ihu1502107205912_110x203.jpg" style="width: 110;height: 203;" /></td></tr><tr class="TableStyle-ibplatform01-Body-Body1"><td class="TableStyle-ibplatform01-BodyE-Column1-Body1">Unsaved Action - Selection</td><td class="TableStyle-ibplatform01-BodyD-Column1-Body1"><img src="xph1502107203423_102x187.jpg" style="width: 102;height: 187;" /></td></tr><tr class="TableStyle-ibplatform01-Body-Body1"><td class="TableStyle-ibplatform01-BodyE-Column1-Body1">Saved Action - Default</td><td class="TableStyle-ibplatform01-BodyD-Column1-Body1"><img src="snu1502107209151_395x58.jpg" style="width: 395;height: 58;" /></td></tr><tr class="TableStyle-ibplatform01-Body-Body1"><td class="TableStyle-ibplatform01-BodyB-Column1-Body1">Saved Action - Selection</td><td class="TableStyle-ibplatform01-BodyA-Column1-Body1"><img src="doq1504606972627_370x96.jpg" style="width: 370;height: 96;" /></td></tr></tbody></table></p>
+                                                </div>
+                                                <div class="section">
+                                                    <h2 class="sectiontitle" id="CanvasToolbaroptions" data-magellan-target="CanvasToolbaroptions">Canvas Toolbar options</h2>
+                                                    <p>Use the icons in the Canvas Toolbar to perform the following activities to design a
+				workflow process:<table class="TableStyle-ibplatform01" style="mc-table-style: url('../Resources/TableStyles/ib-table.css');" cellspacing="0"><thead><tr class="TableStyle-ibplatform01-Head-Header1"><th class="TableStyle-ibplatform01-HeadE-Column1-Header1">Icon</th><th class="TableStyle-ibplatform01-HeadE-Column1-Header1">Icon Name</th><th class="TableStyle-ibplatform01-HeadD-Column1-Header1">Description/Result</th></tr></thead><tbody><tr class="TableStyle-ibplatform01-Body-Body1"><td class="TableStyle-ibplatform01-BodyE-Column1-Body1"><img src="bnl1502108590763.jpg" /></td><td class="TableStyle-ibplatform01-BodyE-Column1-Body1"><span class="uicontrol">Add New Status</span></td><td class="TableStyle-ibplatform01-BodyD-Column1-Body1">You can drag a status anywhere on the canvas and rename it. To remove a status from
+							the canvas, click <b>Add New Status</b> again or select the status and
+							press the <b>DELETE</b> key.</td></tr><tr class="TableStyle-ibplatform01-Body-Body1"><td class="TableStyle-ibplatform01-BodyE-Column1-Body1"><img src="sns1502108574297.jpg" /></td><td class="TableStyle-ibplatform01-BodyE-Column1-Body1"><span class="uicontrol">Layouts</span></td><td class="TableStyle-ibplatform01-BodyD-Column1-Body1">You can choose to preview a preferred layout and apply it for the workflow process to
+							retain the position of the statuses. <div class="note"><b>Note: </b><ul><li>Applying a selected layout will override the existing
+										layout.</li><li>When an existing application is imported, the default layout
+										of a workflow process in the Workflow Designer appears in a
+										‘Left to Right Layout’. </li></ul></div></td></tr><tr class="TableStyle-ibplatform01-Body-Body1"><td class="TableStyle-ibplatform01-BodyE-Column1-Body1"><img src="phm1502108580472.jpg" /></td><td class="TableStyle-ibplatform01-BodyE-Column1-Body1"><span class="uicontrol">Save as PNG</span></td><td class="TableStyle-ibplatform01-BodyD-Column1-Body1">Downloads the workflow process diagram to your system and saves it as a .PNG
+							file.</td></tr><tr class="TableStyle-ibplatform01-Body-Body1"><td class="TableStyle-ibplatform01-BodyE-Column1-Body1"><img src="lzo1502108585388.jpg" /></td><td class="TableStyle-ibplatform01-BodyE-Column1-Body1"><span class="uicontrol">Fit diagram to available space</span></td><td class="TableStyle-ibplatform01-BodyD-Column1-Body1">Fits the workflow process size to the canvas. If the workflow process size is large,
+							this will shrink and fit it to the canvas.</td></tr><tr class="TableStyle-ibplatform01-Body-Body1"><td class="TableStyle-ibplatform01-BodyE-Column1-Body1"><img src="tub1502108587738.jpg" /></td><td class="TableStyle-ibplatform01-BodyE-Column1-Body1"><span class="uicontrol">Zoom In</span></td><td class="TableStyle-ibplatform01-BodyD-Column1-Body1">Magnifies the workflow process to make it appear much larger and clearer. <div class="note"><b>Note: </b>Click
+								in the white space on the canvas and drag the mouse to pan and view
+								the entire diagram when a workflow process image is
+								magnified.</div></td></tr><tr class="TableStyle-ibplatform01-Body-Body1"><td class="TableStyle-ibplatform01-BodyE-Column1-Body1"><img src="gcp1502108583030.jpg" /></td><td class="TableStyle-ibplatform01-BodyE-Column1-Body1"><span class="uicontrol">Restore zoom level to default</span></td><td class="TableStyle-ibplatform01-BodyD-Column1-Body1">Restores the original size of the workflow process.</td></tr><tr class="TableStyle-ibplatform01-Body-Body1"><td class="TableStyle-ibplatform01-BodyB-Column1-Body1"><img src="aau1502108577878.jpg" /></td><td class="TableStyle-ibplatform01-BodyB-Column1-Body1"><span class="uicontrol">Zoom Out</span></td><td class="TableStyle-ibplatform01-BodyA-Column1-Body1">Reduces or alters the size of the workflow process.</td></tr></tbody></table></p>
+                                                    <p>Here’s a sample view of the Layouts:</p>
+                                                    <p>
+                                                        <img src="jgh1502109649551_296x342.jpg" style="width: 296;height: 342;" />
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <p id="return-to-top"><a href="#top"><img src="../xebresources/evbg/arrow_circle_up_24dp_1f1f1f_fill0_wght400_grad0_opsz24.png" /></a>
+                                            </p>
+                                        </div>
+                                        <div class="topicnav-wrapper">
+                                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolbarProxy mc-component nocontent" style="mc-topic-toolbar-items: Back QuickSearch AddTopicToFavorites;">
+                                                <div class="button-group-container-left">
+                                                    <button class="button needs-pie previous-topic-button" title="Go back" disabled="true">
+                                                        <div>
+                                                            <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                                <div class="button-icon"> </div>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                    <button class="button needs-pie next-topic-button" title="See what's next" disabled="true">
+                                                        <div>
+                                                            <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                                <div class="button-icon"> </div>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <br />
+                                            <h4>In this topic</h4>
+                                            <div class="sticky-container">
+                                                <div data-sticky-container="" id="VtW0OJBF7U64yUcJ7Rvqag">
+                                                    <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="VtW0OJBF7U64yUcJ7Rvqag:top" data-bottom-anchor="contentBody:bottom" data-scroll-container=".body-container" data-sticky-on="only screen and (min-width: 1201px)" data-scroll-container-on="only screen and (min-width: 1201px)">
+                                                        <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1201px)" class="topicMenu menu _Skins_TopicMenuProxy mc-component">
+                                                            <li class="tree-node"><a href="#WorkflowDesignerInterface">Workflow Designer Interface</a>
+                                                            </li>
+                                                            <li>
+                                                                <ul>
+                                                                    <li class="tree-node"><a href="#WorkflowCanvas">Workflow Canvas</a>
+                                                                    </li>
+                                                                    <li class="tree-node"><a href="#Statusespanel">Statuses panel</a>
+                                                                    </li>
+                                                                    <li class="tree-node"><a href="#ActionLabelShowHide">Action Label – Show/Hide</a>
+                                                                    </li>
+                                                                    <li class="tree-node"><a href="#CanvasToolbaroptions">Canvas Toolbar options</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="home-footer">
+                                        <table style="width: 100%;border-top-style: solid;border-top-width: 1px;border-top-color: #808080;">
+                                            <col />
+                                            <col />
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p> </p>
+                                                    </td>
+                                                    <td style="text-align: left;">
+                                                        <p>Content © 2025 Everbridge, Inc. All rights reserved. </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
